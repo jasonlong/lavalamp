@@ -45,10 +45,25 @@ let g:colors_name = "Lotus"
 :let fg_gray20  = ' guifg='.gray20
 
 :let yellow = '#f2e415'
-:let green  = '#95d127'
 :let red    = '#ee3551'
 :let orange = '#ff8638'
 :let purple = '#b111fc'
+
+:let green120 = '#acf12d'
+:let green100 = '#95d127'
+:let green90  = '#88c305'
+:let green80  = '#7db20a'
+:let green70  = '#72a10f'
+:let green60  = '#679014'
+:let green50  = '#5c8018'
+
+:let fg_green120 = ' guifg='.green120
+:let fg_green100 = ' guifg='.green100
+:let fg_green90  = ' guifg='.green90
+:let fg_green80  = ' guifg='.green80
+:let fg_green70  = ' guifg='.green70
+:let fg_green60  = ' guifg='.green60
+:let fg_green50  = ' guifg='.green50
 
 :let blue120 = '#5bc2fc'
 :let blue100 = '#11a7fc'
@@ -113,15 +128,21 @@ let g:colors_name = "Lotus"
 :exe 'hi htmlArg'         . fg_blue70
 
 " Ruby
-:exe 'hi erubyDelimiter'             . fg_gray60
-:exe 'hi rubyControl'                . fg_white
-:exe 'hi rubyString'                 . fg_blue
+:exe 'hi erubyDelimiter'             . fg_green50
+:exe 'hi erubyBlock'                 . fg_green70
+:exe 'hi erubyExpression'            . fg_yellow
+:exe 'hi rubyControl'                . fg_yellow
+:exe 'hi rubyString'                 . fg_green120
 :exe 'hi rubySymbol'                 . fg_blue
 :exe 'hi rubyDefine'                 . fg_gray50
 :exe 'hi rubyClass'                  . fg_white
+:exe 'hi rubySymbol'                 . fg_green90
+:exe 'hi rubyInteger'                . fg_green120
 :exe 'hi rubyConstant'               . fg_red
 :exe 'hi rubyInstanceVariable'       . fg_green
 :exe 'hi rubyInterpolationDelimiter' . fg_gray60
+:exe 'hi rubyBlockParameterList'     . fg_green100
+:exe 'hi rubyBlockParameter'         . fg_yellow
 
 "
 "Highlighting groups for various occasions
