@@ -46,10 +46,25 @@ let g:colors_name = "Lotus"
 
 :let yellow = '#f2e415'
 :let green  = '#95d127'
-:let blue   = '#11a7fc'
 :let red    = '#ee3551'
 :let orange = '#ff8638'
 :let purple = '#b111fc'
+
+:let blue120 = '#5bc2fc'
+:let blue100 = '#11a7fc'
+:let blue90  = '#0499eb'
+:let blue80  = '#078dd6'
+:let blue70  = '#0b81c2'
+:let blue60  = '#0f75ad'
+:let blue50  = '#126998'
+
+:let fg_blue120 = ' guifg='.blue120
+:let fg_blue100 = ' guifg='.blue100
+:let fg_blue90  = ' guifg='.blue90
+:let fg_blue80  = ' guifg='.blue80
+:let fg_blue70  = ' guifg='.blue70
+:let fg_blue60  = ' guifg='.blue60
+:let fg_blue50  = ' guifg='.blue50
 
 :let bg_yellow = ' guibg='.yellow
 :let bg_green  = ' guibg='.green
@@ -91,9 +106,11 @@ let g:colors_name = "Lotus"
 :exe 'hi vimLineComment'  . fg_gray60
 
 " HTML
-:exe 'hi htmlTag'         . fg_gray60
-:exe 'hi htmlEndTag'      . fg_gray60
-:exe 'hi htmlTagName'     . fg_orange
+:exe 'hi htmlTag'         . fg_blue50
+:exe 'hi htmlEndTag'      . fg_blue50
+:exe 'hi htmlTagName'     . fg_blue80
+:exe 'hi htmlString'      . fg_blue120
+:exe 'hi htmlArg'         . fg_blue70
 
 " Ruby
 :exe 'hi erubyDelimiter'             . fg_gray60
