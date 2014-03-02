@@ -81,12 +81,6 @@ let g:colors_name = "lavalamp"
 :let blue1_dark   = '#359ad5'
 :let blue1_xdark  = '#0e82c6'
 
-:let blue2_xlight = '#c1c6fe'
-:let blue2_light  = '#818afe'
-:let blue2_med    = '#303ffc'
-:let blue2_dark   = '#434ed6'
-:let blue2_xdark  = '#1a27c6'
-
 :let blue_muted   = '#126998'
 
 :let fg_blue1_xlight = ' guifg='.blue1_xlight
@@ -95,11 +89,17 @@ let g:colors_name = "lavalamp"
 :let fg_blue1_dark   = ' guifg='.blue1_dark
 :let fg_blue1_xdark  = ' guifg='.blue1_xdark
 
-:let fg_blue2_xlight = ' guifg='.blue2_xlight
-:let fg_blue2_light  = ' guifg='.blue2_light
-:let fg_blue2_med    = ' guifg='.blue2_med
-:let fg_blue2_dark   = ' guifg='.blue2_dark
-:let fg_blue2_xdark  = ' guifg='.blue2_xdark
+:let purple_xlight = '#d387fd'
+:let purple_light  = '#c45cfd'
+:let purple_med    = '#af26fb'
+:let purple_dark   = '#9244bc'
+:let purple_xdark  = '#6e0ca3'
+
+:let fg_purple_xlight = ' guifg='.purple_xlight
+:let fg_purple_light  = ' guifg='.purple_light
+:let fg_purple_med    = ' guifg='.purple_med
+:let fg_purple_dark   = ' guifg='.purple_dark
+:let fg_purple_xdark  = ' guifg='.purple_xdark
 
 :let fg_blue_muted   = ' guifg='.blue_muted
 
@@ -157,20 +157,6 @@ let g:colors_name = "lavalamp"
 :let fg_blue60  = ' guifg='.blue60
 :let fg_blue50  = ' guifg='.blue50
 
-" :let bg_yellow = ' guibg='.yellow
-" :let bg_green  = ' guibg='.green
-" :let bg_blue   = ' guibg='.blue
-" :let bg_red    = ' guibg='.red
-" :let bg_orange = ' guibg='.orange
-" :let bg_purple = ' guibg='.purple
-"
-" :let fg_yellow = ' guifg='.yellow
-" :let fg_green  = ' guifg='.green
-" :let fg_blue   = ' guifg='.blue
-" :let fg_red    = ' guifg='.red
-" :let fg_orange = ' guifg='.orange
-" :let fg_purple = ' guifg='.purple
-
 :let fg_none    = ' NONE'
 :let bg_none    = ' NONE'
 :let gui_none   = ' gui=NONE'
@@ -221,6 +207,47 @@ let g:colors_name = "lavalamp"
 :exe 'hi htmlH3'          . fg_white
 :exe 'hi htmlH4'          . fg_white
 :exe 'hi htmlH5'          . fg_white
+
+" CSS
+:exe 'hi cssTagName'         . fg_purple_xlight
+:exe 'hi cssAttrComma'       . fg_purple_dark
+:exe 'hi cssClassName'       . fg_purple_xlight
+:exe 'hi cssBraces'          . fg_purple_xdark
+:exe 'hi cssNoise'           . fg_purple_xdark
+:exe 'hi cssTextProp'        . fg_purple_light
+:exe 'hi cssFontProp'        . fg_purple_light
+:exe 'hi cssUIProp'          . fg_purple_light
+:exe 'hi cssPageProp'        . fg_purple_light
+:exe 'hi cssDimensionProp'   . fg_purple_light
+:exe 'hi cssBackgroundProp'  . fg_purple_light
+:exe 'hi cssTransitionProp'  . fg_purple_light
+:exe 'hi cssListProp'        . fg_purple_light
+:exe 'hi cssBorderProp'      . fg_purple_light
+:exe 'hi cssBorderAttr'      . fg_purple_light
+:exe 'hi cssPositioningAttr' . fg_purple_xlight
+:exe 'hi cssBackgroundAttr'  . fg_purple_xlight
+:exe 'hi cssColor'           . fg_purple_xlight
+:exe 'hi cssPositioningProp' . fg_purple_light
+:exe 'hi cssBoxProp'         . fg_purple_light
+:exe 'hi sassProperty'       . fg_red_dark
+:exe 'hi sassMixing'         . fg_red_dark
+:exe 'hi sassMixinName'      . fg_red_light
+:exe 'hi sassInclude'        . fg_red_dark
+:exe 'hi sassDefinition'     . fg_purple_dark
+:exe 'hi sassAmpersand'      . fg_red_light
+:exe 'hi sassClass'          . fg_red_med
+:exe 'hi sassControl'        . fg_red_xlight
+:exe 'hi sassFor'            . fg_red_xlight
+:exe 'hi sassCSSAttribute'   . fg_red_xlight
+:exe 'hi cssUIAttr'          . fg_purple_xlight
+:exe 'hi cssStringQQ'        . fg_purple_xlight
+:exe 'hi cssValueLength'     . fg_purple_xlight
+:exe 'hi cssValueTime'       . fg_purple_xlight
+:exe 'hi cssCommonAttr'      . fg_purple_xlight
+:exe 'hi cssUnitDecorators'  . fg_purple_light
+:exe 'hi cssValueNumber'     . fg_purple_xlight
+:exe 'hi cssPseudoClass'     . fg_purple_xlight
+
 
 " Ruby
 :exe 'hi erubyDelimiter'             . fg_yellow_xdark
