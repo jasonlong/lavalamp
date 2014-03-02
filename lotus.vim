@@ -14,6 +14,7 @@ let g:colors_name = "Lotus"
 :let fg_black  = ' guifg='.black
 
 " darkest to lightest
+:let gray110 = '#20272b'
 :let gray100 = '#252c31'
 :let gray90  = '#323b42'
 :let gray80  = '#353c40'
@@ -24,6 +25,7 @@ let g:colors_name = "Lotus"
 :let gray30  = '#d4d5d6'
 :let gray20  = '#ebecec'
 
+:let bg_gray110 = ' guibg='.gray110
 :let bg_gray100 = ' guibg='.gray100
 :let bg_gray90  = ' guibg='.gray90
 :let bg_gray80  = ' guibg='.gray80
@@ -57,6 +59,14 @@ let g:colors_name = "Lotus"
 :let green60  = '#679014'
 :let green50  = '#5c8018'
 
+:let bg_green120 = ' guibg='.green120
+:let bg_green100 = ' guibg='.green100
+:let bg_green90  = ' guibg='.green90
+:let bg_green80  = ' guibg='.green80
+:let bg_green70  = ' guibg='.green70
+:let bg_green60  = ' guibg='.green60
+:let bg_green50  = ' guibg='.green50
+
 :let fg_green120 = ' guifg='.green120
 :let fg_green100 = ' guifg='.green100
 :let fg_green90  = ' guifg='.green90
@@ -64,6 +74,72 @@ let g:colors_name = "Lotus"
 :let fg_green70  = ' guifg='.green70
 :let fg_green60  = ' guifg='.green60
 :let fg_green50  = ' guifg='.green50
+
+:let blue1_xlight = '#bbe5fe'
+:let blue1_light  = '#75cbfe'
+:let blue1_med    = '#1ca9fc'
+:let blue1_dark   = '#359ad5'
+:let blue1_xdark  = '#0e82c6'
+
+:let blue2_xlight = '#c1c6fe'
+:let blue2_light  = '#818afe'
+:let blue2_med    = '#303ffc'
+:let blue2_dark   = '#434ed6'
+:let blue2_xdark  = '#1a27c6'
+
+:let blue_muted   = '#126998'
+
+:let fg_blue1_xlight = ' guifg='.blue1_xlight
+:let fg_blue1_light  = ' guifg='.blue1_light
+:let fg_blue1_med    = ' guifg='.blue1_med
+:let fg_blue1_dark   = ' guifg='.blue1_dark
+:let fg_blue1_xdark  = ' guifg='.blue1_xdark
+
+:let fg_blue2_xlight = ' guifg='.blue2_xlight
+:let fg_blue2_light  = ' guifg='.blue2_light
+:let fg_blue2_med    = ' guifg='.blue2_med
+:let fg_blue2_dark   = ' guifg='.blue2_dark
+:let fg_blue2_xdark  = ' guifg='.blue2_xdark
+
+:let fg_blue_muted   = ' guifg='.blue_muted
+
+:let red_xlight = '#fdc4c3'
+:let red_light  = '#fd8885'
+:let red_med    = '#f73b36'
+:let red_dark   = '#d14a47'
+:let red_xdark  = '#c2221d'
+:let red_muted  = '#9f2f42'
+
+:let orange_xlight = '#fddec3'
+:let orange_light  = '#fdbc85'
+:let orange_med    = '#f78f36'
+:let orange_dark   = '#d18747'
+:let orange_xdark  = '#c2691d'
+
+:let yellow_xlight = '#f8f18c'
+:let yellow_light  = '#f8ee65'
+:let yellow_med    = '#f1e432'
+:let yellow_dark   = '#b5ad49'
+:let yellow_xdark  = '#9d9310'
+
+:let fg_red_xlight = ' guifg='.red_xlight
+:let fg_red_light  = ' guifg='.red_light
+:let fg_red_med    = ' guifg='.red_med
+:let fg_red_dark   = ' guifg='.red_dark
+:let fg_red_xdark  = ' guifg='.red_xdark
+:let fg_red_muted  = ' guifg='.red_muted
+
+:let fg_orange_xlight = ' guifg='.orange_xlight
+:let fg_orange_light  = ' guifg='.orange_light
+:let fg_orange_med    = ' guifg='.orange_med
+:let fg_orange_dark   = ' guifg='.orange_dark
+:let fg_orange_xdark  = ' guifg='.orange_xdark
+
+:let fg_yellow_xlight = ' guifg='.yellow_xlight
+:let fg_yellow_light  = ' guifg='.yellow_light
+:let fg_yellow_med    = ' guifg='.yellow_med
+:let fg_yellow_dark   = ' guifg='.yellow_dark
+:let fg_yellow_xdark  = ' guifg='.yellow_xdark
 
 :let blue120 = '#5bc2fc'
 :let blue100 = '#11a7fc'
@@ -81,68 +157,106 @@ let g:colors_name = "Lotus"
 :let fg_blue60  = ' guifg='.blue60
 :let fg_blue50  = ' guifg='.blue50
 
-:let bg_yellow = ' guibg='.yellow
-:let bg_green  = ' guibg='.green
-:let bg_blue   = ' guibg='.blue
-:let bg_red    = ' guibg='.red
-:let bg_orange = ' guibg='.orange
-:let bg_purple = ' guibg='.purple
+" :let bg_yellow = ' guibg='.yellow
+" :let bg_green  = ' guibg='.green
+" :let bg_blue   = ' guibg='.blue
+" :let bg_red    = ' guibg='.red
+" :let bg_orange = ' guibg='.orange
+" :let bg_purple = ' guibg='.purple
+"
+" :let fg_yellow = ' guifg='.yellow
+" :let fg_green  = ' guifg='.green
+" :let fg_blue   = ' guifg='.blue
+" :let fg_red    = ' guifg='.red
+" :let fg_orange = ' guifg='.orange
+" :let fg_purple = ' guifg='.purple
 
-:let fg_yellow = ' guifg='.yellow
-:let fg_green  = ' guifg='.green
-:let fg_blue   = ' guifg='.blue
-:let fg_red    = ' guifg='.red
-:let fg_orange = ' guifg='.orange
-:let fg_purple = ' guifg='.purple
+:let fg_none    = ' NONE'
+:let bg_none    = ' NONE'
+:let gui_none   = ' gui=NONE'
+:let gui_bold   = ' gui=bold'
+:let gui_italic = ' gui=italic'
 
-:let fg_none = ' NONE'
-:let bg_none = ' NONE'
-
-:exe 'hi Normal'          . bg_gray100 . fg_gray40
+:exe 'hi Normal'          . bg_gray110 . fg_gray40
 :exe 'hi Cursor'          . bg_gray40
 :exe 'hi LineNR'          . fg_gray70
 :exe 'hi CursorLineNR'    . fg_gray40
-:exe 'hi CursorLine'      . bg_gray90
+:exe 'hi CursorLine'      . bg_gray110
 :exe 'hi CursorColumn'    . bg_gray90
 :exe 'hi Comment'         . fg_gray60
 :exe 'hi Search'          . bg_yellow . fg_gray100
 :exe 'hi IncSearch'       . bg_yellow . fg_gray100
-:exe 'hi Constant'        . fg_blue
+:exe 'hi Constant'        . fg_blue100
 :exe 'hi Todo'            . bg_purple . fg_gray100
 :exe 'hi Directory'       . fg_white
 :exe 'hi Identifier'      . fg_red
 :exe 'hi Statement'       . fg_gray40
 :exe "hi Special"         . fg_red
-:exe "hi Underlined"      . fg_blue
+:exe "hi Underlined"      . fg_blue100
 :exe "hi Ignore"          . fg_none . bg_none
 :exe "hi Error"           . bg_red . fg_gray100
+:exe "hi VertSplit"       . bg_gray90 . fg_gray90 . gui_none
+" :exe "hi StatusLine"      . bg_green100 . fg_gray100
+
+" hi StatusLine ctermfg=231 ctermbg=241 cterm=bold guifg=#f8f8f2 guibg=#64645e gui=bold
+" hi StatusLineNC ctermfg=231 ctermbg=241 cterm=NONE guifg=#f8f8f2 guibg=#64645e gui=NONE
+" hi Pmenu ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+" hi PmenuSel ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#49483e gui=NONE
 
 " Vim
 :exe 'hi vimLineComment'  . fg_gray60
 
 " HTML
-:exe 'hi htmlTag'         . fg_blue50
-:exe 'hi htmlEndTag'      . fg_blue50
-:exe 'hi htmlTagName'     . fg_blue80
-:exe 'hi htmlString'      . fg_blue120
-:exe 'hi htmlArg'         . fg_blue70
+:exe 'hi htmlTag'         . fg_blue_muted
+:exe 'hi htmlEndTag'      . fg_blue_muted
+:exe 'hi htmlTagName'     . fg_blue1_med
+:exe 'hi htmlTagN'        . fg_blue1_med
+:exe 'hi htmlString'      . fg_blue1_xlight
+:exe 'hi htmlArg'         . fg_blue1_dark
+:exe 'hi htmlTitle'       . fg_white . gui_bold
+:exe 'hi htmlBold'        . fg_gray50 . gui_bold
+:exe 'hi htmlItalic'      . gui_italic
+:exe 'hi htmlH1'          . fg_white . gui_bold
+:exe 'hi htmlH2'          . fg_white
+:exe 'hi htmlH3'          . fg_white
+:exe 'hi htmlH4'          . fg_white
+:exe 'hi htmlH5'          . fg_white
 
 " Ruby
-:exe 'hi erubyDelimiter'             . fg_green50
-:exe 'hi erubyBlock'                 . fg_green70
-:exe 'hi erubyExpression'            . fg_yellow
+:exe 'hi erubyDelimiter'             . fg_yellow_xdark
+:exe 'hi erubyBlock'                 . fg_yellow_dark
+:exe 'hi erubyExpression'            . fg_yellow_dark
+:exe 'hi erubyRailsHelperMethod'     . fg_yellow
+:exe 'hi erubyRailsRenderMethod'     . fg_yellow
 :exe 'hi rubyControl'                . fg_yellow
-:exe 'hi rubyString'                 . fg_green120
-:exe 'hi rubySymbol'                 . fg_blue
+:exe 'hi rubyString'                 . fg_yellow_xlight
+:exe 'hi rubySymbol'                 . fg_yellow
 :exe 'hi rubyDefine'                 . fg_gray50
 :exe 'hi rubyClass'                  . fg_white
-:exe 'hi rubySymbol'                 . fg_green90
-:exe 'hi rubyInteger'                . fg_green120
-:exe 'hi rubyConstant'               . fg_red
-:exe 'hi rubyInstanceVariable'       . fg_green
+:exe 'hi rubySymbol'                 . fg_yellow
+:exe 'hi rubyInteger'                . fg_yellow_xlight
+:exe 'hi rubyConstant'               . fg_yellow
+:exe 'hi rubyKeyword'                . fg_yellow
+:exe 'hi rubyInstanceVariable'       . fg_yellow
 :exe 'hi rubyInterpolationDelimiter' . fg_gray60
-:exe 'hi rubyBlockParameterList'     . fg_green100
-:exe 'hi rubyBlockParameter'         . fg_yellow
+:exe 'hi rubyBlockParameterList'     . fg_yellow_xdark
+:exe 'hi rubyBlockParameter'         . fg_yellow_light
+
+" :exe 'hi erubyDelimiter'             . fg_green50
+" :exe 'hi erubyBlock'                 . fg_green70
+" :exe 'hi erubyExpression'            . fg_yellow
+" :exe 'hi rubyControl'                . fg_yellow
+" :exe 'hi rubyString'                 . fg_green120
+" :exe 'hi rubySymbol'                 . fg_blue
+" :exe 'hi rubyDefine'                 . fg_gray50
+" :exe 'hi rubyClass'                  . fg_white
+" :exe 'hi rubySymbol'                 . fg_green90
+" :exe 'hi rubyInteger'                . fg_green120
+" :exe 'hi rubyConstant'               . fg_red
+" :exe 'hi rubyInstanceVariable'       . fg_green
+" :exe 'hi rubyInterpolationDelimiter' . fg_gray60
+" :exe 'hi rubyBlockParameterList'     . fg_green100
+" :exe 'hi rubyBlockParameter'         . fg_yellow
 
 "
 "Highlighting groups for various occasions
