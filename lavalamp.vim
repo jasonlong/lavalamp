@@ -3,7 +3,7 @@ highlight clear
 if exists("syntax_on")
   syntax reset
 endif
-let g:colors_name = "Lotus"
+let g:colors_name = "lavalamp"
 
 :let white  = '#ffffff'
 :let black  = '#000000'
@@ -242,23 +242,6 @@ let g:colors_name = "Lotus"
 :exe 'hi rubyBlockParameterList'     . fg_yellow_xdark
 :exe 'hi rubyBlockParameter'         . fg_yellow_light
 
-" :exe 'hi erubyDelimiter'             . fg_green50
-" :exe 'hi erubyBlock'                 . fg_green70
-" :exe 'hi erubyExpression'            . fg_yellow
-" :exe 'hi rubyControl'                . fg_yellow
-" :exe 'hi rubyString'                 . fg_green120
-" :exe 'hi rubySymbol'                 . fg_blue
-" :exe 'hi rubyDefine'                 . fg_gray50
-" :exe 'hi rubyClass'                  . fg_white
-" :exe 'hi rubySymbol'                 . fg_green90
-" :exe 'hi rubyInteger'                . fg_green120
-" :exe 'hi rubyConstant'               . fg_red
-" :exe 'hi rubyInstanceVariable'       . fg_green
-" :exe 'hi rubyInterpolationDelimiter' . fg_gray60
-" :exe 'hi rubyBlockParameterList'     . fg_green100
-" :exe 'hi rubyBlockParameter'         . fg_yellow
-
-"
 "Highlighting groups for various occasions
 "-----------------------------------------
 " exe "hi SpecialKey"     . s:fg_base02 .s:bg_none   .s:fmt_none

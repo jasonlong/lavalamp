@@ -1,4 +1,4 @@
 lavalamp
 ========
 
-WIP color theme for editors
+WIP color theme. Don't use this yet.
