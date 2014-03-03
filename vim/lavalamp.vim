@@ -51,43 +51,25 @@ let g:colors_name = "lavalamp"
 :let orange = '#ff8638'
 :let purple = '#b111fc'
 
-:let green120 = '#acf12d'
-:let green100 = '#95d127'
-:let green90  = '#88c305'
-:let green80  = '#7db20a'
-:let green70  = '#72a10f'
-:let green60  = '#679014'
-:let green50  = '#5c8018'
-
-:let bg_green120 = ' guibg='.green120
-:let bg_green100 = ' guibg='.green100
-:let bg_green90  = ' guibg='.green90
-:let bg_green80  = ' guibg='.green80
-:let bg_green70  = ' guibg='.green70
-:let bg_green60  = ' guibg='.green60
-:let bg_green50  = ' guibg='.green50
-
-:let fg_green120 = ' guifg='.green120
-:let fg_green100 = ' guifg='.green100
-:let fg_green90  = ' guifg='.green90
-:let fg_green80  = ' guifg='.green80
-:let fg_green70  = ' guifg='.green70
-:let fg_green60  = ' guifg='.green60
-:let fg_green50  = ' guifg='.green50
-
-:let blue1_xlight = '#bbe5fe'
-:let blue1_light  = '#75cbfe'
-:let blue1_med    = '#1ca9fc'
-:let blue1_dark   = '#359ad5'
-:let blue1_xdark  = '#0e82c6'
+:let blue_xlight = '#bbe5fe'
+:let blue_light  = '#75cbfe'
+:let blue_med    = '#1ca9fc'
+:let blue_dark   = '#359ad5'
+:let blue_xdark  = '#0e82c6'
 
 :let blue_muted   = '#126998'
 
-:let fg_blue1_xlight = ' guifg='.blue1_xlight
-:let fg_blue1_light  = ' guifg='.blue1_light
-:let fg_blue1_med    = ' guifg='.blue1_med
-:let fg_blue1_dark   = ' guifg='.blue1_dark
-:let fg_blue1_xdark  = ' guifg='.blue1_xdark
+:let fg_blue_xlight = ' guifg='.blue_xlight
+:let fg_blue_light  = ' guifg='.blue_light
+:let fg_blue_med    = ' guifg='.blue_med
+:let fg_blue_dark   = ' guifg='.blue_dark
+:let fg_blue_xdark  = ' guifg='.blue_xdark
+
+:let bg_blue_xlight = ' guibg='.blue_xlight
+:let bg_blue_light  = ' guibg='.blue_light
+:let bg_blue_med    = ' guibg='.blue_med
+:let bg_blue_dark   = ' guibg='.blue_dark
+:let bg_blue_xdark  = ' guibg='.blue_xdark
 
 :let purple_xlight = '#d387fd'
 :let purple_light  = '#c45cfd'
@@ -141,22 +123,6 @@ let g:colors_name = "lavalamp"
 :let fg_yellow_dark   = ' guifg='.yellow_dark
 :let fg_yellow_xdark  = ' guifg='.yellow_xdark
 
-:let blue120 = '#5bc2fc'
-:let blue100 = '#11a7fc'
-:let blue90  = '#0499eb'
-:let blue80  = '#078dd6'
-:let blue70  = '#0b81c2'
-:let blue60  = '#0f75ad'
-:let blue50  = '#126998'
-
-:let fg_blue120 = ' guifg='.blue120
-:let fg_blue100 = ' guifg='.blue100
-:let fg_blue90  = ' guifg='.blue90
-:let fg_blue80  = ' guifg='.blue80
-:let fg_blue70  = ' guifg='.blue70
-:let fg_blue60  = ' guifg='.blue60
-:let fg_blue50  = ' guifg='.blue50
-
 :let fg_none    = ' NONE'
 :let bg_none    = ' NONE'
 :let gui_none   = ' gui=NONE'
@@ -164,7 +130,7 @@ let g:colors_name = "lavalamp"
 :let gui_italic = ' gui=italic'
 
 :exe 'hi Normal'          . bg_gray110 . fg_gray40
-:exe 'hi Cursor'          . bg_gray40
+:exe 'hi Cursor'          . bg_blue_med
 :exe 'hi LineNR'          . fg_gray70
 :exe 'hi CursorLineNR'    . fg_gray40
 :exe 'hi CursorLine'      . bg_gray110
@@ -172,13 +138,13 @@ let g:colors_name = "lavalamp"
 :exe 'hi Comment'         . fg_gray60
 :exe 'hi Search'          . bg_yellow . fg_gray100
 :exe 'hi IncSearch'       . bg_yellow . fg_gray100
-:exe 'hi Constant'        . fg_blue100
+:exe 'hi Constant'        . fg_blue00
 :exe 'hi Todo'            . bg_purple . fg_gray100
 :exe 'hi Directory'       . fg_white
 :exe 'hi Identifier'      . fg_red
 :exe 'hi Statement'       . fg_gray40
 :exe "hi Special"         . fg_red
-:exe "hi Underlined"      . fg_blue100
+:exe "hi Underlined"      . fg_blue00
 :exe "hi Ignore"          . fg_none . bg_none
 :exe "hi Error"           . bg_red . fg_gray100
 :exe "hi VertSplit"       . bg_gray90 . fg_gray90 . gui_none
@@ -195,10 +161,10 @@ let g:colors_name = "lavalamp"
 " HTML
 :exe 'hi htmlTag'         . fg_blue_muted
 :exe 'hi htmlEndTag'      . fg_blue_muted
-:exe 'hi htmlTagName'     . fg_blue1_med
-:exe 'hi htmlTagN'        . fg_blue1_med
-:exe 'hi htmlString'      . fg_blue1_xlight
-:exe 'hi htmlArg'         . fg_blue1_dark
+:exe 'hi htmlTagName'     . fg_blue_med
+:exe 'hi htmlTagN'        . fg_blue_med
+:exe 'hi htmlString'      . fg_blue_xlight
+:exe 'hi htmlArg'         . fg_blue_dark
 :exe 'hi htmlTitle'       . fg_white . gui_bold
 :exe 'hi htmlBold'        . fg_gray50 . gui_bold
 :exe 'hi htmlItalic'      . gui_italic
