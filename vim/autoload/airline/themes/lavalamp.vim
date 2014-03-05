@@ -1,22 +1,22 @@
 " Normal mode
 let s:N1 = [ white , blue_xdark , 15 , 55  ]
 let s:N2 = [ white , blue_med , 15 , 98  ]
-let s:N3 = [ white , gray100 , 15 , 233 ]
+let s:N3 = [ gray50 , gray100 , 15 , 233 ]
 
 " Insert mode
 let s:I1 = [ white , green_xdark , 15 , 33  ]
 let s:I2 = [ white , green_med , 15 , 39  ]
-let s:I3 = [ white , gray100 , 15 , 233 ]
+let s:I3 = [ gray50 , gray100 , 15 , 233 ]
 
 " Visual mode
 let s:V1 = [ white , purple_xdark , 233 , 202 ]
 let s:V2 = [ white , purple_med , 233 , 214 ]
-let s:V3 = [ white , gray100 , 15  , 233 ]
+let s:V3 = [ gray50 , gray100 , 15  , 233 ]
 
 " Replace mode
 let s:R1 = [ white , orange_xdark , 15 , 196 ]
 let s:R2 = [ white , orange_med , 15 , 203 ]
-let s:R3 = [ white , gray100 , 15 , 233 ]
+let s:R3 = [ gray50 , gray100 , 15 , 233 ]
 
 let g:airline#themes#lavalamp#palette = {}
 let g:airline#themes#lavalamp#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)

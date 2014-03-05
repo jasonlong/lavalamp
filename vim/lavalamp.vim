@@ -119,6 +119,12 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :let green_dark   = '#7b9d3e'
 :let green_xdark  = '#5c880d'
 
+:let brown_xlight = '#d4ad83'
+:let brown_light  = '#d49f66'
+:let brown_med    = '#a97134'
+:let brown_dark   = '#7f5f3d'
+:let brown_xdark  = '#6e4111'
+
 :let fg_red_xlight = ' guifg='.red_xlight
 :let fg_red_light  = ' guifg='.red_light
 :let fg_red_med    = ' guifg='.red_med
@@ -163,6 +169,18 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :let bg_green_dark   = ' guibg='.green_dark
 :let bg_green_xdark  = ' guibg='.green_xdark
 
+:let fg_brown_xlight = ' guifg='.brown_xlight
+:let fg_brown_light  = ' guifg='.brown_light
+:let fg_brown_med    = ' guifg='.brown_med
+:let fg_brown_dark   = ' guifg='.brown_dark
+:let fg_brown_xdark  = ' guifg='.brown_xdark
+
+:let bg_brown_xlight = ' guibg='.brown_xlight
+:let bg_brown_light  = ' guibg='.brown_light
+:let bg_brown_med    = ' guibg='.brown_med
+:let bg_brown_dark   = ' guibg='.brown_dark
+:let bg_brown_xdark  = ' guibg='.brown_xdark
+
 :let fg_none    = ' NONE'
 :let bg_none    = ' NONE'
 :let gui_none   = ' gui=NONE'
@@ -176,7 +194,7 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi CursorLine'      . bg_gray100
 :exe 'hi CursorColumn'    . bg_gray90
 :exe 'hi Comment'         . fg_gray60
-:exe 'hi Visual'          . bg_purple_xdark
+:exe 'hi Visual'          . bg_purple_xdark . fg_white
 :exe 'hi Search'          . bg_yellow_med . fg_gray100
 :exe 'hi IncSearch'       . bg_yellow_med . fg_gray100
 :exe 'hi Constant'        . fg_blue_med
@@ -197,10 +215,6 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe "hi EasyMotionTarget" . bg_gray110 . fg_yellow_med
 :exe "hi EasyMotionShade"  . bg_gray110 . fg_gray70
 
-" hi StatusLine ctermfg=231 ctermbg=241 cterm=bold guifg=#f8f8f2 guibg=#64645e gui=bold
-" hi StatusLineNC ctermfg=231 ctermbg=241 cterm=NONE guifg=#f8f8f2 guibg=#64645e gui=NONE
-" hi Pmenu ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-" hi PmenuSel ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#49483e gui=NONE
 
 " Vim
 :exe 'hi vimLineComment'  . fg_gray60
@@ -284,6 +298,18 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi rubyInterpolationDelimiter' . fg_gray60
 :exe 'hi rubyBlockParameterList'     . fg_yellow_xdark
 :exe 'hi rubyBlockParameter'         . fg_yellow_light
+
+" Coffeescript
+:exe 'hi coffeeExtendedOp'         . fg_brown_light
+:exe 'hi coffeeParen'              . fg_brown_dark
+:exe 'hi coffeeBracket'            . fg_brown_dark
+:exe 'hi coffeeNumber'             . fg_brown_xlight
+:exe 'hi coffeeStatement'          . fg_brown_light
+:exe 'hi coffeeObjAssign'          . fg_brown_med
+:exe 'hi coffeeString'             . fg_brown_xlight
+:exe 'hi coffeeDotAccess'          . fg_brown_med
+:exe 'hi coffeeSpecialOp'          . fg_brown_dark
+
 
 "Highlighting groups for various occasions
 "-----------------------------------------
