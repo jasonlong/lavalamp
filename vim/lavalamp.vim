@@ -315,6 +315,20 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi coffeeKeyword'            . fg_brown_med
 :exe 'hi coffeeBoolean'            . fg_brown_light
 
+" Javascript
+:exe 'hi javascriptMember'         . fg_yellow_med
+:exe 'hi javascriptParens'         . fg_yellow_dark
+:exe 'hi javascriptBraces'         . fg_yellow_xdark
+:exe 'hi javascriptStringS'        . fg_yellow_xlight
+:exe 'hi javascriptFunction'       . fg_yellow_med
+:exe 'hi javascriptConditional'    . fg_yellow_med
+:exe 'hi javascriptIdentifier'     . fg_yellow_dark
+:exe 'hi javascriptBoolean'        . fg_yellow_light
+:exe 'hi javascriptNumber'         . fg_yellow_light
+:exe 'hi javascriptGlobal'         . fg_white
+:exe 'hi javascriptMessage'        . fg_white
+
+
 
 "Highlighting groups for various occasions
 "-----------------------------------------
