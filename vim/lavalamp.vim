@@ -120,6 +120,13 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :let fg_red_xdark  = ' guifg='.red_xdark
 :let fg_red_muted  = ' guifg='.red_muted
 
+:let bg_red_xlight = ' guibg='.red_xlight
+:let bg_red_light  = ' guibg='.red_light
+:let bg_red_med    = ' guibg='.red_med
+:let bg_red_dark   = ' guibg='.red_dark
+:let bg_red_xdark  = ' guibg='.red_xdark
+:let bg_red_muted  = ' guibg='.red_muted
+
 :let fg_orange_xlight = ' guifg='.orange_xlight
 :let fg_orange_light  = ' guifg='.orange_light
 :let fg_orange_med    = ' guifg='.orange_med
@@ -132,6 +139,12 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :let fg_yellow_dark   = ' guifg='.yellow_dark
 :let fg_yellow_xdark  = ' guifg='.yellow_xdark
 
+:let bg_yellow_xlight = ' guibg='.yellow_xlight
+:let bg_yellow_light  = ' guibg='.yellow_light
+:let bg_yellow_med    = ' guibg='.yellow_med
+:let bg_yellow_dark   = ' guibg='.yellow_dark
+:let bg_yellow_xdark  = ' guibg='.yellow_xdark
+
 :let fg_none    = ' NONE'
 :let bg_none    = ' NONE'
 :let gui_none   = ' gui=NONE'
@@ -142,22 +155,29 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi Cursor'          . bg_blue_med
 :exe 'hi LineNR'          . fg_gray70
 :exe 'hi CursorLineNR'    . fg_gray40
-:exe 'hi CursorLine'      . bg_gray110
+:exe 'hi CursorLine'      . bg_gray100
 :exe 'hi CursorColumn'    . bg_gray90
 :exe 'hi Comment'         . fg_gray60
-:exe 'hi Search'          . bg_yellow . fg_gray100
-:exe 'hi IncSearch'       . bg_yellow . fg_gray100
-:exe 'hi Constant'        . fg_blue00
-:exe 'hi Todo'            . bg_purple . fg_gray100
+:exe 'hi Visual'          . bg_purple_xdark
+:exe 'hi Search'          . bg_yellow_med . fg_gray100
+:exe 'hi IncSearch'       . bg_yellow_med . fg_gray100
+:exe 'hi Constant'        . fg_blue_med
+:exe 'hi Todo'            . bg_purple_med . fg_gray100
 :exe 'hi Directory'       . fg_white
-:exe 'hi Identifier'      . fg_red
+:exe 'hi Identifier'      . fg_red_med
 :exe 'hi Statement'       . fg_gray40
-:exe "hi Special"         . fg_red
-:exe "hi Underlined"      . fg_blue00
+:exe "hi Special"         . fg_red_med
+:exe "hi Underlined"      . fg_blue_med
 :exe "hi Ignore"          . fg_none . bg_none
-:exe "hi Error"           . bg_red . fg_gray100
+:exe "hi Error"           . bg_red_med . fg_gray100
 :exe "hi VertSplit"       . bg_gray90 . fg_gray90 . gui_none
-" :exe "hi StatusLine"      . bg_green100 . fg_gray100
+
+:exe "hi Pmenu"           . bg_blue_xdark . fg_white
+:exe "hi PmenuSel"        . bg_blue_xlight . fg_blue_xdark
+:exe "hi PmenuSbar"       . bg_blue_xdark . fg_gray100
+
+:exe "hi EasyMotionTarget" . bg_gray110 . fg_yellow_med
+:exe "hi EasyMotionShade"  . bg_gray110 . fg_gray70
 
 " hi StatusLine ctermfg=231 ctermbg=241 cterm=bold guifg=#f8f8f2 guibg=#64645e gui=bold
 " hi StatusLineNC ctermfg=231 ctermbg=241 cterm=NONE guifg=#f8f8f2 guibg=#64645e gui=NONE
@@ -186,6 +206,7 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 " CSS
 :exe 'hi cssTagName'         . fg_purple_xlight  . gui_bold
 :exe 'hi cssAttrComma'       . fg_purple_dark
+:exe 'hi cssAttr'            . fg_gray40
 :exe 'hi cssClassName'       . fg_purple_xlight
 :exe 'hi cssBraces'          . fg_purple_xdark
 :exe 'hi cssNoise'           . fg_purple_dark
@@ -198,7 +219,9 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi cssTransitionProp'  . fg_purple_light
 :exe 'hi cssListProp'        . fg_purple_light
 :exe 'hi cssBorderProp'      . fg_purple_light
+:exe 'hi cssTableProp'       . fg_purple_light
 :exe 'hi cssColor'           . fg_gray40
+:exe 'hi cssClassName'       . fg_purple_xlight . gui_bold
 :exe 'hi cssPositioningProp' . fg_purple_light
 :exe 'hi cssBoxProp'         . fg_purple_light
 :exe 'hi cssImportant'       . fg_purple_med  . gui_bold
@@ -227,18 +250,19 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi erubyDelimiter'             . fg_yellow_xdark
 :exe 'hi erubyBlock'                 . fg_yellow_dark
 :exe 'hi erubyExpression'            . fg_yellow_dark
-:exe 'hi erubyRailsHelperMethod'     . fg_yellow
-:exe 'hi erubyRailsRenderMethod'     . fg_yellow
-:exe 'hi rubyControl'                . fg_yellow
+:exe 'hi erubyRailsHelperMethod'     . fg_yellow_med
+:exe 'hi erubyRailsRenderMethod'     . fg_yellow_med
+:exe 'hi rubyControl'                . fg_yellow_med
 :exe 'hi rubyString'                 . fg_yellow_xlight
-:exe 'hi rubySymbol'                 . fg_yellow
+:exe 'hi rubyStringDelimiter'        . fg_yellow_light
+:exe 'hi rubySymbol'                 . fg_yellow_med
 :exe 'hi rubyDefine'                 . fg_gray50
 :exe 'hi rubyClass'                  . fg_white
-:exe 'hi rubySymbol'                 . fg_yellow
+:exe 'hi rubySymbol'                 . fg_yellow_med
 :exe 'hi rubyInteger'                . fg_yellow_xlight
-:exe 'hi rubyConstant'               . fg_yellow
-:exe 'hi rubyKeyword'                . fg_yellow
-:exe 'hi rubyInstanceVariable'       . fg_yellow
+:exe 'hi rubyConstant'               . fg_yellow_med
+:exe 'hi rubyKeyword'                . fg_yellow_med
+:exe 'hi rubyInstanceVariable'       . fg_yellow_med
 :exe 'hi rubyInterpolationDelimiter' . fg_gray60
 :exe 'hi rubyBlockParameterList'     . fg_yellow_xdark
 :exe 'hi rubyBlockParameter'         . fg_yellow_light
