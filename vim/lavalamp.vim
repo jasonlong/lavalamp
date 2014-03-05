@@ -309,6 +309,11 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi coffeeString'             . fg_brown_xlight
 :exe 'hi coffeeDotAccess'          . fg_brown_med
 :exe 'hi coffeeSpecialOp'          . fg_brown_dark
+:exe 'hi coffeeObject'             . fg_brown_light
+:exe 'hi coffeeConditional'        . fg_brown_med
+:exe 'hi coffeeRepeat'             . fg_brown_med
+:exe 'hi coffeeKeyword'            . fg_brown_med
+:exe 'hi coffeeBoolean'            . fg_brown_light
 
 
 "Highlighting groups for various occasions
