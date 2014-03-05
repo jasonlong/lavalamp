@@ -113,6 +113,12 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :let yellow_dark   = '#b5ad49'
 :let yellow_xdark  = '#9d9310'
 
+:let green_xlight = '#c3e881'
+:let green_light  = '#b6e85c'
+:let green_med    = '#95d129'
+:let green_dark   = '#7b9d3e'
+:let green_xdark  = '#5c880d'
+
 :let fg_red_xlight = ' guifg='.red_xlight
 :let fg_red_light  = ' guifg='.red_light
 :let fg_red_med    = ' guifg='.red_med
@@ -144,6 +150,18 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :let bg_yellow_med    = ' guibg='.yellow_med
 :let bg_yellow_dark   = ' guibg='.yellow_dark
 :let bg_yellow_xdark  = ' guibg='.yellow_xdark
+
+:let fg_green_xlight = ' guifg='.green_xlight
+:let fg_green_light  = ' guifg='.green_light
+:let fg_green_med    = ' guifg='.green_med
+:let fg_green_dark   = ' guifg='.green_dark
+:let fg_green_xdark  = ' guifg='.green_xdark
+
+:let bg_green_xlight = ' guibg='.green_xlight
+:let bg_green_light  = ' guibg='.green_light
+:let bg_green_med    = ' guibg='.green_med
+:let bg_green_dark   = ' guibg='.green_dark
+:let bg_green_xdark  = ' guibg='.green_xdark
 
 :let fg_none    = ' NONE'
 :let bg_none    = ' NONE'
@@ -308,4 +326,3 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 " exe "hi Cursor"         . s:fg_none   .s:bg_none   .s:fmt_revr
 " exe "hi lCursor"        . s:fg_none   .s:bg_none   .s:fmt_stnd
 " exe "hi MatchParen"     . s:fg_red    .s:bg_base01 .s:fmt_bold
-"
