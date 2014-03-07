@@ -44,7 +44,7 @@ let g:colors_name = "lavalamp"
 :let fg_gray60  = ' guifg='.gray60
 :let fg_gray50  = ' guifg='.gray50
 :let fg_gray40  = ' guifg='.gray40
-:let fg_gray40  = ' guifg='.gray40
+:let fg_gray30  = ' guifg='.gray30
 :let fg_gray20  = ' guifg='.gray20
 
 :let yellow = '#f2e415'
@@ -187,10 +187,10 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :let gui_bold   = ' gui=bold'
 :let gui_italic = ' gui=italic'
 
-:exe 'hi Normal'          . bg_gray110 . fg_gray40
+:exe 'hi Normal'          . bg_gray110 . fg_gray30
 :exe 'hi Cursor'          . bg_blue_med
 :exe 'hi LineNR'          . fg_gray70
-:exe 'hi CursorLineNR'    . fg_gray40
+:exe 'hi CursorLineNR'    . fg_gray30
 :exe 'hi CursorLine'      . bg_gray100
 :exe 'hi CursorColumn'    . bg_gray90
 :exe 'hi Comment'         . fg_gray60
@@ -201,7 +201,7 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi Todo'            . bg_purple_med . fg_gray100
 :exe 'hi Directory'       . fg_white
 :exe 'hi Identifier'      . fg_red_med
-:exe 'hi Statement'       . fg_gray40
+:exe 'hi Statement'       . fg_gray30
 :exe "hi Special"         . fg_red_med
 :exe "hi Underlined"      . fg_blue_med
 :exe "hi Ignore"          . fg_none . bg_none
@@ -238,7 +238,7 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 " CSS
 :exe 'hi cssTagName'         . fg_purple_xlight  . gui_bold
 :exe 'hi cssAttrComma'       . fg_purple_dark
-:exe 'hi cssAttr'            . fg_gray40
+:exe 'hi cssAttr'            . fg_gray30
 :exe 'hi cssClassName'       . fg_purple_xlight
 :exe 'hi cssBraces'          . fg_purple_xdark
 :exe 'hi cssNoise'           . fg_purple_dark
@@ -252,7 +252,9 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi cssListProp'        . fg_purple_light
 :exe 'hi cssBorderProp'      . fg_purple_light
 :exe 'hi cssTableProp'       . fg_purple_light
-:exe 'hi cssColor'           . fg_gray40
+:exe 'hi cssColor'           . fg_gray30
+:exe 'hi cssColorProp'       . fg_purple_light
+:exe 'hi cssAnimationProp'   . fg_purple_light
 :exe 'hi cssClassName'       . fg_purple_xlight . gui_bold
 :exe 'hi cssPositioningProp' . fg_purple_light
 :exe 'hi cssBoxProp'         . fg_purple_light
@@ -270,34 +272,53 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi sassFor'            . fg_red_xlight
 :exe 'hi sassCSSAttribute'   . fg_red_xlight
 :exe 'hi cssStringQQ'        . fg_purple_xlight
-:exe 'hi cssValueLength'     . fg_gray40
-:exe 'hi cssValueTime'       . fg_gray40
+:exe 'hi cssValueLength'     . fg_gray30
+:exe 'hi cssValueTime'       . fg_gray30
 :exe 'hi cssCommonAttr'      . fg_gray60
 :exe 'hi cssUnitDecorators'  . fg_gray60
-:exe 'hi cssValueNumber'     . fg_gray40
+:exe 'hi cssValueNumber'     . fg_gray30
 :exe 'hi cssPseudoClass'     . fg_purple_xlight
+:exe 'hi cssFlexibleBoxProp'     . fg_purple_light
 
 
 " Ruby
-:exe 'hi erubyDelimiter'             . fg_yellow_xdark
-:exe 'hi erubyBlock'                 . fg_yellow_dark
-:exe 'hi erubyExpression'            . fg_yellow_dark
-:exe 'hi erubyRailsHelperMethod'     . fg_yellow_med
-:exe 'hi erubyRailsRenderMethod'     . fg_yellow_med
-:exe 'hi rubyControl'                . fg_yellow_med
-:exe 'hi rubyString'                 . fg_yellow_xlight
-:exe 'hi rubyStringDelimiter'        . fg_yellow_light
-:exe 'hi rubySymbol'                 . fg_yellow_med
-:exe 'hi rubyDefine'                 . fg_gray50
-:exe 'hi rubyClass'                  . fg_white
-:exe 'hi rubySymbol'                 . fg_yellow_med
-:exe 'hi rubyInteger'                . fg_yellow_xlight
-:exe 'hi rubyConstant'               . fg_yellow_med
-:exe 'hi rubyKeyword'                . fg_yellow_med
-:exe 'hi rubyInstanceVariable'       . fg_yellow_med
-:exe 'hi rubyInterpolationDelimiter' . fg_gray60
-:exe 'hi rubyBlockParameterList'     . fg_yellow_xdark
-:exe 'hi rubyBlockParameter'         . fg_yellow_light
+" :exe 'hi erubyDelimiter'             . fg_yellow_xdark
+" :exe 'hi erubyBlock'                 . fg_yellow_dark
+" :exe 'hi erubyExpression'            . fg_yellow_dark
+" :exe 'hi erubyRailsHelperMethod'     . fg_yellow_med
+" :exe 'hi erubyRailsRenderMethod'     . fg_yellow_med
+" :exe 'hi rubyControl'                . fg_yellow_med
+" :exe 'hi rubyString'                 . fg_yellow_xlight
+" :exe 'hi rubyStringDelimiter'        . fg_yellow_light
+" :exe 'hi rubySymbol'                 . fg_yellow_med
+" :exe 'hi rubyDefine'                 . fg_gray50
+" :exe 'hi rubyClass'                  . fg_white
+" :exe 'hi rubySymbol'                 . fg_yellow_med
+" :exe 'hi rubyInteger'                . fg_yellow_xlight
+" :exe 'hi rubyConstant'               . fg_yellow_med
+" :exe 'hi rubyKeyword'                . fg_yellow_med
+" :exe 'hi rubyInstanceVariable'       . fg_yellow_med
+" :exe 'hi rubyInterpolationDelimiter' . fg_gray60
+" :exe 'hi rubyBlockParameterList'     . fg_yellow_xdark
+" :exe 'hi rubyBlockParameter'         . fg_yellow_light
+
+:exe 'hi erubyDelimiter'             . fg_red_xdark
+:exe 'hi erubyBlock'                 . fg_red_light
+:exe 'hi erubyExpression'            . fg_red_med
+:exe 'hi rubyInclude'         . fg_red_med
+:exe 'hi rubyString'          . fg_red_xlight
+:exe 'hi rubyConstant'               . fg_white . gui_bold
+:exe 'hi rubyClass'                  . fg_red_med
+:exe 'hi rubyModule'                  . fg_red_med
+:exe 'hi rubyDefine'                  . fg_red_med
+:exe 'hi rubySymbol'                  . fg_red_xlight
+:exe 'hi rubyInteger'                  . fg_red_xlight
+:exe 'hi rubyFloat'                  . fg_red_xlight
+:exe 'hi rubyFunction'                  . fg_white . gui_bold
+:exe 'hi rubyStringDelimiter'        . fg_red_dark
+:exe 'hi rubyBoolean'        . fg_red_xlight
+:exe 'hi rubyTodo'        . fg_red_med . bg_white
+
 
 " Coffeescript
 :exe 'hi coffeeExtendedOp'         . fg_brown_light
@@ -314,6 +335,7 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi coffeeRepeat'             . fg_brown_med
 :exe 'hi coffeeKeyword'            . fg_brown_med
 :exe 'hi coffeeBoolean'            . fg_brown_light
+:exe 'hi coffeeSpecialVar'         . fg_brown_light
 
 " Javascript
 :exe 'hi javascriptMember'         . fg_yellow_med
