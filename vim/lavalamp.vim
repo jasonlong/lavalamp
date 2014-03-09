@@ -334,6 +334,7 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi javascriptParens'       .fg_yellow_dark
 :exe 'hi javascriptBraces'       .fg_yellow_xdark
 :exe 'hi javascriptStringS'      .fg_yellow_xlight
+:exe 'hi javascriptStringD'      .fg_yellow_xlight
 :exe 'hi javascriptFunction'     .fg_yellow_med
 :exe 'hi javascriptConditional'  .fg_yellow_med
 :exe 'hi javascriptIdentifier'   .fg_yellow_dark
