@@ -94,11 +94,17 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 
 :let fg_blue_muted   = ' guifg='.blue_muted
 
-:let red_xlight = '#ff73bf'
-:let red_light  = '#ff4540'
-:let red_med    = '#f73b36'
-:let red_dark   = '#bf3330'
-:let red_xdark  = '#a60400'
+" :let red_xlight = '#ff73bf'
+" :let red_light  = '#ff4540'
+" :let red_med    = '#f73b36'
+" :let red_dark   = '#bf3330'
+" :let red_xdark  = '#a60400'
+" :let red_muted  = '#9f2f42'
+:let red_xlight = '#fa8380'
+:let red_light  = '#f75450'
+:let red_med    = '#f32620'
+:let red_dark   = '#d4110c'
+:let red_xdark  = '#a30e0a'
 :let red_muted  = '#9f2f42'
 
 :let orange_xlight = '#fddec3'
@@ -187,185 +193,162 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :let gui_bold   = ' gui=bold'
 :let gui_italic = ' gui=italic'
 
-:exe 'hi Normal'          . bg_gray110 . fg_gray30
-:exe 'hi Cursor'          . bg_blue_med
-:exe 'hi LineNR'          . fg_gray70
-:exe 'hi CursorLineNR'    . fg_gray30
-:exe 'hi CursorLine'      . bg_gray100
-:exe 'hi CursorColumn'    . bg_gray90
-:exe 'hi Comment'         . fg_gray60
-:exe 'hi Visual'          . bg_purple_xdark . fg_white
-:exe 'hi Search'          . bg_yellow_med . fg_gray100
-:exe 'hi IncSearch'       . bg_yellow_med . fg_gray100
-:exe 'hi Constant'        . fg_blue_med
-:exe 'hi Todo'            . bg_purple_med . fg_gray100
-:exe 'hi Directory'       . fg_white
-:exe 'hi Identifier'      . fg_red_med
-:exe 'hi Statement'       . fg_gray30
-:exe "hi Special"         . fg_red_med
-:exe "hi Underlined"      . fg_blue_med
-:exe "hi Ignore"          . fg_none . bg_none
-:exe "hi Error"           . bg_red_med . fg_gray100
-:exe "hi VertSplit"       . bg_gray90 . fg_gray90 . gui_none
+:exe 'hi Normal'                 .bg_gray110 . fg_gray30
+:exe 'hi Cursor'                 .bg_blue_med
+:exe 'hi LineNR'                 .fg_gray70
+:exe 'hi CursorLineNR'           .fg_gray30
+:exe 'hi CursorLine'             .bg_gray100
+:exe 'hi CursorColumn'           .bg_gray90
+:exe 'hi Comment'                .fg_gray60
+:exe 'hi Visual'                 .bg_purple_xdark . fg_white
+:exe 'hi Search'                 .bg_yellow_med . fg_gray100
+:exe 'hi IncSearch'              .bg_yellow_med . fg_gray100
+:exe 'hi Constant'               .fg_blue_med
+:exe 'hi Todo'                   .bg_purple_med . fg_gray100
+:exe 'hi Directory'              .fg_white
+:exe 'hi Identifier'             .fg_red_med
+:exe 'hi Statement'              .fg_gray30
+:exe "hi Special"                .fg_red_med
+:exe "hi Underlined"             .fg_blue_med
+:exe "hi Ignore"                 .fg_none . bg_none
+:exe "hi Error"                  .bg_red_med . fg_gray100
+:exe "hi VertSplit"              .bg_gray90 . fg_gray90 . gui_none
+:exe "hi MatchParen"             .bg_blue_xdark . fg_blue_xlight
 
-:exe "hi Pmenu"           . bg_blue_xdark . fg_white
-:exe "hi PmenuSel"        . bg_blue_xlight . fg_blue_xdark
-:exe "hi PmenuSbar"       . bg_blue_xdark . fg_gray100
+:exe "hi Pmenu"                  .bg_blue_xdark . fg_white
+:exe "hi PmenuSel"               .bg_blue_xlight . fg_blue_xdark
+:exe "hi PmenuSbar"              .bg_blue_xdark . fg_gray100
 
-:exe "hi EasyMotionTarget" . bg_gray110 . fg_yellow_med
-:exe "hi EasyMotionShade"  . bg_gray110 . fg_gray70
-
+:exe "hi EasyMotionTarget"       .bg_gray110 . fg_yellow_med
+:exe "hi EasyMotionShade"        .bg_gray110 . fg_gray70
 
 " Vim
-:exe 'hi vimLineComment'  . fg_gray60
+:exe 'hi vimLineComment'         .fg_gray60
 
 " HTML
-:exe 'hi htmlTag'         . fg_blue_muted
-:exe 'hi htmlEndTag'      . fg_blue_muted
-:exe 'hi htmlTagName'     . fg_blue_med
-:exe 'hi htmlTagN'        . fg_blue_med
-:exe 'hi htmlString'      . fg_blue_xlight
-:exe 'hi htmlArg'         . fg_blue_dark
-:exe 'hi htmlTitle'       . fg_white . gui_bold
-:exe 'hi htmlBold'        . fg_gray50 . gui_bold
-:exe 'hi htmlItalic'      . gui_italic
-:exe 'hi htmlH1'          . fg_white . gui_bold
-:exe 'hi htmlH2'          . fg_white
-:exe 'hi htmlH3'          . fg_white
-:exe 'hi htmlH4'          . fg_white
-:exe 'hi htmlH5'          . fg_white
+:exe 'hi htmlTag'                .fg_blue_muted
+:exe 'hi htmlEndTag'             .fg_blue_muted
+:exe 'hi htmlTagName'            .fg_blue_med
+:exe 'hi htmlTagN'               .fg_blue_med
+:exe 'hi htmlString'             .fg_blue_xlight
+:exe 'hi htmlArg'                .fg_blue_dark
+:exe 'hi htmlTitle'              .fg_white . gui_bold
+:exe 'hi htmlBold'               .fg_gray50 . gui_bold
+:exe 'hi htmlItalic'             .gui_italic
+:exe 'hi htmlH1'                 .fg_white . gui_bold
+:exe 'hi htmlH2'                 .fg_white
+:exe 'hi htmlH3'                 .fg_white
+:exe 'hi htmlH4'                 .fg_white
+:exe 'hi htmlH5'                 .fg_white
 
 " CSS
-:exe 'hi cssTagName'         . fg_purple_xlight  . gui_bold
-:exe 'hi cssAttrComma'       . fg_purple_dark
-:exe 'hi cssAttr'            . fg_gray30
-:exe 'hi cssClassName'       . fg_purple_xlight
-:exe 'hi cssBraces'          . fg_purple_xdark
-:exe 'hi cssNoise'           . fg_purple_dark
-:exe 'hi cssTextProp'        . fg_purple_light
-:exe 'hi cssFontProp'        . fg_purple_light
-:exe 'hi cssUIProp'          . fg_purple_light
-:exe 'hi cssPageProp'        . fg_purple_light
-:exe 'hi cssDimensionProp'   . fg_purple_light
-:exe 'hi cssBackgroundProp'  . fg_purple_light
-:exe 'hi cssTransitionProp'  . fg_purple_light
-:exe 'hi cssListProp'        . fg_purple_light
-:exe 'hi cssBorderProp'      . fg_purple_light
-:exe 'hi cssTableProp'       . fg_purple_light
-:exe 'hi cssColor'           . fg_gray30
-:exe 'hi cssColorProp'       . fg_purple_light
-:exe 'hi cssAnimationProp'   . fg_purple_light
-:exe 'hi cssClassName'       . fg_purple_xlight . gui_bold
-:exe 'hi cssPositioningProp' . fg_purple_light
-:exe 'hi cssBoxProp'         . fg_purple_light
-:exe 'hi cssImportant'       . fg_purple_med  . gui_bold
-:exe 'hi sassProperty'       . fg_red_dark
-:exe 'hi sassMixing'         . fg_red_dark
-:exe 'hi sassMixinName'      . fg_red_light
-:exe 'hi sassInclude'        . fg_red_dark
-:exe 'hi sassDefinition'     . fg_purple_dark
-:exe 'hi sassAmpersand'      . fg_red_med
-:exe 'hi sassClass'          . fg_purple_xlight . gui_bold
-:exe 'hi sassClassChar'      . fg_purple_xlight . gui_bold
-:exe 'hi sassControl'        . fg_red_xlight
-:exe 'hi sassVariableAssignment'  . fg_red_xlight
-:exe 'hi sassFor'            . fg_red_xlight
-:exe 'hi sassCSSAttribute'   . fg_red_xlight
-:exe 'hi cssStringQQ'        . fg_purple_xlight
-:exe 'hi cssValueLength'     . fg_gray30
-:exe 'hi cssValueTime'       . fg_gray30
-:exe 'hi cssCommonAttr'      . fg_gray60
-:exe 'hi cssUnitDecorators'  . fg_gray60
-:exe 'hi cssValueNumber'     . fg_gray30
-:exe 'hi cssPseudoClass'     . fg_purple_xlight
-:exe 'hi cssFlexibleBoxProp'     . fg_purple_light
-
+:exe 'hi cssTagName'             .fg_purple_xlight  . gui_bold
+:exe 'hi cssAttrComma'           .fg_purple_dark
+:exe 'hi cssAttr'                .fg_gray30
+:exe 'hi cssClassName'           .fg_purple_xlight
+:exe 'hi cssBraces'              .fg_purple_xdark
+:exe 'hi cssNoise'               .fg_purple_dark
+:exe 'hi cssTextProp'            .fg_purple_light
+:exe 'hi cssFontProp'            .fg_purple_light
+:exe 'hi cssUIProp'              .fg_purple_light
+:exe 'hi cssPageProp'            .fg_purple_light
+:exe 'hi cssDimensionProp'       .fg_purple_light
+:exe 'hi cssBackgroundProp'      .fg_purple_light
+:exe 'hi cssTransitionProp'      .fg_purple_light
+:exe 'hi cssListProp'            .fg_purple_light
+:exe 'hi cssBorderProp'          .fg_purple_light
+:exe 'hi cssTableProp'           .fg_purple_light
+:exe 'hi cssColorProp'           .fg_purple_light
+:exe 'hi cssAnimationProp'       .fg_purple_light
+:exe 'hi cssPositioningProp'     .fg_purple_light
+:exe 'hi cssBoxProp'             .fg_purple_light
+:exe 'hi cssFlexibleBoxProp'     .fg_purple_light
+:exe 'hi cssColor'               .fg_gray30
+:exe 'hi cssClassName'           .fg_purple_xlight . gui_bold
+:exe 'hi cssImportant'           .fg_purple_med  . gui_bold
+:exe 'hi cssStringQQ'            .fg_purple_xlight
+:exe 'hi cssValueLength'         .fg_gray30
+:exe 'hi cssValueTime'           .fg_gray30
+:exe 'hi cssCommonAttr'          .fg_gray60
+:exe 'hi cssUnitDecorators'      .fg_gray60
+:exe 'hi cssValueNumber'         .fg_gray30
+:exe 'hi cssPseudoClass'         .fg_purple_xlight
+:exe 'hi sassProperty'           .fg_red_dark
+:exe 'hi sassMixing'             .fg_red_dark
+:exe 'hi sassMixinName'          .fg_red_light
+:exe 'hi sassInclude'            .fg_red_dark
+:exe 'hi sassDefinition'         .fg_purple_dark
+:exe 'hi sassAmpersand'          .fg_red_med
+:exe 'hi sassClass'              .fg_purple_xlight . gui_bold
+:exe 'hi sassClassChar'          .fg_purple_xlight . gui_bold
+:exe 'hi sassControl'            .fg_red_xlight
+:exe 'hi sassVariableAssignment' .fg_red_xlight
+:exe 'hi sassFor'                .fg_red_xlight
+:exe 'hi sassCSSAttribute'       .fg_red_xlight
 
 " Ruby
-" :exe 'hi erubyDelimiter'             . fg_yellow_xdark
-" :exe 'hi erubyBlock'                 . fg_yellow_dark
-" :exe 'hi erubyExpression'            . fg_yellow_dark
-" :exe 'hi erubyRailsHelperMethod'     . fg_yellow_med
-" :exe 'hi erubyRailsRenderMethod'     . fg_yellow_med
-" :exe 'hi rubyControl'                . fg_yellow_med
-" :exe 'hi rubyString'                 . fg_yellow_xlight
-" :exe 'hi rubyStringDelimiter'        . fg_yellow_light
-" :exe 'hi rubySymbol'                 . fg_yellow_med
-" :exe 'hi rubyDefine'                 . fg_gray50
-" :exe 'hi rubyClass'                  . fg_white
-" :exe 'hi rubySymbol'                 . fg_yellow_med
-" :exe 'hi rubyInteger'                . fg_yellow_xlight
-" :exe 'hi rubyConstant'               . fg_yellow_med
-" :exe 'hi rubyKeyword'                . fg_yellow_med
-" :exe 'hi rubyInstanceVariable'       . fg_yellow_med
-" :exe 'hi rubyInterpolationDelimiter' . fg_gray60
-" :exe 'hi rubyBlockParameterList'     . fg_yellow_xdark
-" :exe 'hi rubyBlockParameter'         . fg_yellow_light
-
-:exe 'hi erubyDelimiter'             . fg_red_xdark
-:exe 'hi erubyBlock'                 . fg_red_light
-:exe 'hi erubyExpression'            . fg_red_med
-:exe 'hi rubyInclude'         . fg_red_med
-:exe 'hi rubyString'          . fg_red_xlight
-:exe 'hi rubyConstant'               . fg_white . gui_bold
-:exe 'hi rubyClass'                  . fg_red_med
-:exe 'hi rubyModule'                  . fg_red_med
-:exe 'hi rubyDefine'                  . fg_red_med
-:exe 'hi rubySymbol'                  . fg_red_xlight
-:exe 'hi rubyInteger'                  . fg_red_xlight
-:exe 'hi rubyFloat'                  . fg_red_xlight
-:exe 'hi rubyFunction'                  . fg_white . gui_bold
-:exe 'hi rubyStringDelimiter'        . fg_red_dark
-:exe 'hi rubyBoolean'        . fg_red_xlight
-:exe 'hi rubyTodo'        . fg_red_med . bg_white
-
+:exe 'hi erubyDelimiter'         .fg_red_xdark
+:exe 'hi erubyBlock'             .fg_red_light
+:exe 'hi erubyExpression'        .fg_red_med
+:exe 'hi rubyInclude'            .fg_red_med
+:exe 'hi rubyString'             .fg_red_xlight
+:exe 'hi rubyConstant'           .fg_white . gui_bold
+:exe 'hi rubyClass'              .fg_red_med
+:exe 'hi rubyModule'             .fg_red_med
+:exe 'hi rubyDefine'             .fg_red_dark
+:exe 'hi rubySymbol'             .fg_red_xlight
+:exe 'hi rubyInteger'            .fg_red_xlight
+:exe 'hi rubyFloat'              .fg_red_xlight
+:exe 'hi rubyFunction'           .fg_white . gui_bold
+:exe 'hi rubyBoolean'            .fg_red_xlight
+:exe 'hi rubyTodo'               .fg_red_med . bg_white
+:exe 'hi rubyPseudoVariable'     .fg_red_light
+:exe 'hi rubyStringDelimiter'    .fg_red_dark
+:exe 'hi rubyArrayDelimiter'     .fg_red_xdark
+:exe 'hi rubyCurlyBlockDelimiter'.fg_red_xdark
+:exe 'hi rubySharpBang'          .fg_red_xdark
 
 " Coffeescript
-:exe 'hi coffeeExtendedOp'         . fg_brown_light
-:exe 'hi coffeeParen'              . fg_brown_dark
-:exe 'hi coffeeBracket'            . fg_brown_dark
-:exe 'hi coffeeNumber'             . fg_brown_xlight
-:exe 'hi coffeeStatement'          . fg_brown_light
-:exe 'hi coffeeObjAssign'          . fg_brown_med
-:exe 'hi coffeeString'             . fg_brown_xlight
-:exe 'hi coffeeDotAccess'          . fg_brown_med
-:exe 'hi coffeeSpecialOp'          . fg_brown_dark
-:exe 'hi coffeeObject'             . fg_brown_light
-:exe 'hi coffeeConditional'        . fg_brown_med
-:exe 'hi coffeeRepeat'             . fg_brown_med
-:exe 'hi coffeeKeyword'            . fg_brown_med
-:exe 'hi coffeeBoolean'            . fg_brown_light
-:exe 'hi coffeeSpecialVar'         . fg_brown_light
+:exe 'hi coffeeExtendedOp'       .fg_brown_light
+:exe 'hi coffeeParen'            .fg_brown_dark
+:exe 'hi coffeeBracket'          .fg_brown_dark
+:exe 'hi coffeeNumber'           .fg_brown_xlight
+:exe 'hi coffeeStatement'        .fg_brown_light
+:exe 'hi coffeeObjAssign'        .fg_brown_med
+:exe 'hi coffeeString'           .fg_brown_xlight
+:exe 'hi coffeeDotAccess'        .fg_brown_med
+:exe 'hi coffeeSpecialOp'        .fg_brown_dark
+:exe 'hi coffeeObject'           .fg_brown_light
+:exe 'hi coffeeConditional'      .fg_brown_med
+:exe 'hi coffeeRepeat'           .fg_brown_med
+:exe 'hi coffeeKeyword'          .fg_brown_med
+:exe 'hi coffeeBoolean'          .fg_brown_light
+:exe 'hi coffeeSpecialVar'       .fg_brown_light
 
 " Javascript
-:exe 'hi javascriptMember'         . fg_yellow_med
-:exe 'hi javascriptParens'         . fg_yellow_dark
-:exe 'hi javascriptBraces'         . fg_yellow_xdark
-:exe 'hi javascriptStringS'        . fg_yellow_xlight
-:exe 'hi javascriptFunction'       . fg_yellow_med
-:exe 'hi javascriptConditional'    . fg_yellow_med
-:exe 'hi javascriptIdentifier'     . fg_yellow_dark
-:exe 'hi javascriptBoolean'        . fg_yellow_light
-:exe 'hi javascriptNumber'         . fg_yellow_light
-:exe 'hi javascriptGlobal'         . fg_white
-:exe 'hi javascriptMessage'        . fg_white
-
-
+:exe 'hi javascriptMember'       .fg_yellow_med
+:exe 'hi javascriptParens'       .fg_yellow_dark
+:exe 'hi javascriptBraces'       .fg_yellow_xdark
+:exe 'hi javascriptStringS'      .fg_yellow_xlight
+:exe 'hi javascriptFunction'     .fg_yellow_med
+:exe 'hi javascriptConditional'  .fg_yellow_med
+:exe 'hi javascriptIdentifier'   .fg_yellow_dark
+:exe 'hi javascriptBoolean'      .fg_yellow_light
+:exe 'hi javascriptNumber'       .fg_yellow_light
+:exe 'hi javascriptGlobal'       .fg_white
+:exe 'hi javascriptMessage'      .fg_white
 
 "Highlighting groups for various occasions
 "-----------------------------------------
 " exe "hi SpecialKey"     . s:fg_base02 .s:bg_none   .s:fmt_none
 " exe "hi NonText"        . s:fg_base02 .s:bg_none   .s:fmt_bold
-" exe "hi Directory"      . s:fg_blue   .s:bg_none   .s:fmt_none
 " exe "hi ErrorMsg"       . s:fg_red    .s:bg_none   .s:fmt_revr
 " exe "hi MoreMsg"        . s:fg_blue   .s:bg_none   .s:fmt_none
 " exe "hi ModeMsg"        . s:fg_blue   .s:bg_none   .s:fmt_none
 " exe "hi Question"       . s:fg_cyan   .s:bg_none   .s:fmt_bold
 " exe "hi StatusLine"     . s:fg_base0  .s:bg_base02 .s:fmt_none
 " exe "hi StatusLineNC"   . s:fg_base1  .s:bg_base02 .s:fmt_none
-" exe "hi VertSplit"      . s:fg_base0  .s:bg_base02 .s:fmt_none
 " exe "hi Title"          . s:fg_orange .s:bg_none   .s:fmt_bold
-" exe "hi Visual"         . s:fg_none   .s:bg_base02 .s:fmt_stnd
 " exe "hi VisualNOS"      . s:fg_none   .s:bg_base02 .s:fmt_stnd
 " exe "hi WarningMsg"     . s:fg_red    .s:bg_none   .s:fmt_bold
 " exe "hi WildMenu"       . s:fg_base1  .s:bg_base02 .s:fmt_none
@@ -381,15 +364,9 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 " exe "hi SpellCap"       . s:fg_none   .s:bg_none   .s:fmt_curl   .s:sp_violet
 " exe "hi SpellRare"      . s:fg_none   .s:bg_none   .s:fmt_curl   .s:sp_cyan
 " exe "hi SpellLocal"     . s:fg_none   .s:bg_none   .s:fmt_curl   .s:sp_yellow
-" exe "hi Pmenu"          . s:fg_base0  .s:bg_base02 .s:fmt_none
-" exe "hi PmenuSel"       . s:fg_base2  .s:bg_base01 .s:fmt_none
-" exe "hi PmenuSbar"      . s:fg_base0  .s:bg_base2  .s:fmt_none
 " exe "hi PmenuThumb"     . s:fg_base03 .s:bg_base0  .s:fmt_none
 " exe "hi TabLine"        . s:fg_base0  .s:bg_base02 .s:fmt_undr   .s:sp_base0
 " exe "hi TabLineSel"     . s:fg_base2  .s:bg_base01 .s:fmt_undr   .s:sp_base0
 " exe "hi TabLineFill"    . s:fg_base0  .s:bg_base02 .s:fmt_undr   .s:sp_base0
-" exe "hi CursorColumn"   . s:fg_none   .s:bg_base02 .s:fmt_none
 " exe "hi ColorColumn"    . s:fg_none   .s:bg_base02 .s:fmt_none
-" exe "hi Cursor"         . s:fg_none   .s:bg_none   .s:fmt_revr
 " exe "hi lCursor"        . s:fg_none   .s:bg_none   .s:fmt_stnd
-" exe "hi MatchParen"     . s:fg_red    .s:bg_base01 .s:fmt_bold
