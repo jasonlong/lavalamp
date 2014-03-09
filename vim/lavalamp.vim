@@ -313,9 +313,12 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi coffeeParen'            .fg_brown_dark
 :exe 'hi coffeeBracket'          .fg_brown_dark
 :exe 'hi coffeeNumber'           .fg_brown_xlight
+:exe 'hi coffeeFloat'            .fg_brown_xlight
+:exe 'hi coffeeConstant'         .fg_brown_light
 :exe 'hi coffeeStatement'        .fg_brown_light
 :exe 'hi coffeeObjAssign'        .fg_brown_med
 :exe 'hi coffeeString'           .fg_brown_xlight
+:exe 'hi coffeeRegex'            .fg_brown_xlight
 :exe 'hi coffeeDotAccess'        .fg_brown_med
 :exe 'hi coffeeSpecialOp'        .fg_brown_dark
 :exe 'hi coffeeObject'           .fg_brown_light
@@ -324,6 +327,7 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi coffeeKeyword'          .fg_brown_med
 :exe 'hi coffeeBoolean'          .fg_brown_light
 :exe 'hi coffeeSpecialVar'       .fg_brown_light
+:exe 'hi coffeeSpecialIdent'     .fg_brown_light
 
 " Javascript
 :exe 'hi javascriptMember'       .fg_yellow_med
