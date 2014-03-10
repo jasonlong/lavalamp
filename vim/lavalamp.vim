@@ -347,7 +347,10 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi javascriptFuncKeyword'   .fg_green_light
 :exe 'hi javascriptBrowserObjects'.fg_green_dark
 :exe 'hi javascriptDOMObjects'    .fg_green_dark
+:exe 'hi javascriptDOMMethods'    .fg_green_dark
+:exe 'hi javascriptWebAPI'        .fg_white
 :exe 'hi javascriptFuncExp'       .fg_white . gui_bold
+:exe 'hi javascriptFuncDef'       .fg_white . gui_bold
 :exe 'hi javascriptLogicSymbols'  .fg_white . gui_bold
 :exe 'hi javascriptGlobal'        .fg_white
 :exe 'hi javascriptMessage'       .fg_white
