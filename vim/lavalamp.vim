@@ -330,18 +330,30 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi coffeeSpecialIdent'     .fg_brown_light
 
 " Javascript
-:exe 'hi javascriptMember'       .fg_yellow_med
-:exe 'hi javascriptParens'       .fg_yellow_dark
-:exe 'hi javascriptBraces'       .fg_yellow_xdark
-:exe 'hi javascriptStringS'      .fg_yellow_xlight
-:exe 'hi javascriptStringD'      .fg_yellow_xlight
-:exe 'hi javascriptFunction'     .fg_yellow_med
-:exe 'hi javascriptConditional'  .fg_yellow_med
-:exe 'hi javascriptIdentifier'   .fg_yellow_dark
-:exe 'hi javascriptBoolean'      .fg_yellow_light
-:exe 'hi javascriptNumber'       .fg_yellow_light
-:exe 'hi javascriptGlobal'       .fg_white
-:exe 'hi javascriptMessage'      .fg_white
+" Best with https://github.com/jelera/vim-javascript-syntax
+:exe 'hi javascriptMember'        .fg_green_med
+:exe 'hi javascriptParens'        .fg_green_dark
+:exe 'hi javascriptBraces'        .fg_green_xdark
+:exe 'hi javascriptString'        .fg_green_xlight
+:exe 'hi javascriptStringS'       .fg_green_xlight
+:exe 'hi javascriptStringD'       .fg_green_xlight
+:exe 'hi javascriptFunction'      .fg_green_med
+:exe 'hi javascriptConditional'   .fg_green_med
+:exe 'hi javascriptIdentifier'    .fg_green_dark
+:exe 'hi javascriptBoolean'       .fg_green_light
+:exe 'hi javascriptNumber'        .fg_green_light
+:exe 'hi javascriptFloat'         .fg_green_light
+:exe 'hi javascriptRegExpString'  .fg_green_light
+:exe 'hi javascriptFuncKeyword'   .fg_green_light
+:exe 'hi javascriptBrowserObjects'.fg_green_dark
+:exe 'hi javascriptDOMObjects'    .fg_green_dark
+:exe 'hi javascriptFuncExp'       .fg_white . gui_bold
+:exe 'hi javascriptLogicSymbols'  .fg_white . gui_bold
+:exe 'hi javascriptGlobal'        .fg_white
+:exe 'hi javascriptMessage'       .fg_white
+:exe 'hi javascriptFuncArg'       .fg_white
+:exe 'hi javascriptGlobalObjects' .fg_white
+:exe 'hi javascriptEndColons'     .fg_gray50
 
 "Highlighting groups for various occasions
 "-----------------------------------------
