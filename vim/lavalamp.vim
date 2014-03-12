@@ -194,8 +194,9 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :let gui_italic = ' gui=italic'
 
 :exe 'hi Normal'                 .bg_gray110 . fg_gray30
+:exe 'hi NonText'                .fg_gray80
 :exe 'hi Cursor'                 .bg_blue_med
-:exe 'hi LineNR'                 .fg_gray70
+:exe 'hi LineNR'                 .fg_gray60
 :exe 'hi CursorLineNR'           .fg_gray30
 :exe 'hi CursorLine'             .bg_gray100
 :exe 'hi CursorColumn'           .bg_gray90
@@ -348,10 +349,12 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi javascriptBrowserObjects'.fg_green_dark
 :exe 'hi javascriptDOMObjects'    .fg_green_dark
 :exe 'hi javascriptDOMMethods'    .fg_green_dark
+:exe 'hi javascriptHtmlEvents'    .fg_green_xlight
+:exe 'hi javascriptEventListenerKeywords'    .fg_green_xlight
 :exe 'hi javascriptWebAPI'        .fg_white
 :exe 'hi javascriptFuncExp'       .fg_white . gui_bold
 :exe 'hi javascriptFuncDef'       .fg_white . gui_bold
-:exe 'hi javascriptLogicSymbols'  .fg_white . gui_bold
+:exe 'hi javascriptLogicSymbols'  .fg_gray30 . gui_bold
 :exe 'hi javascriptGlobal'        .fg_white
 :exe 'hi javascriptMessage'       .fg_white
 :exe 'hi javascriptFuncArg'       .fg_white

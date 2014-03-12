@@ -5,7 +5,7 @@ let s:N3 = [ gray50 , gray100 , 15 , 233 ]
 
 " Insert mode
 let s:I1 = [ white , green_xdark , 15 , 33  ]
-let s:I2 = [ white , green_med , 15 , 39  ]
+let s:I2 = [ green_xdark , green_med , 15 , 39  ]
 let s:I3 = [ gray50 , gray100 , 15 , 233 ]
 
 " Visual mode
