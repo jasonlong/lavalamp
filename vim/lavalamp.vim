@@ -249,6 +249,8 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi cssClassName'           .fg_purple_xlight
 :exe 'hi cssBraces'              .fg_purple_xdark
 :exe 'hi cssNoise'               .fg_purple_dark
+:exe 'hi cssMediaQuery'          .fg_purple_dark
+:exe 'hi cssMedia'               .fg_gray30. gui_bold
 :exe 'hi cssTextProp'            .fg_purple_light
 :exe 'hi cssFontProp'            .fg_purple_light
 :exe 'hi cssUIProp'              .fg_purple_light
@@ -263,6 +265,7 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi cssAnimationProp'       .fg_purple_light
 :exe 'hi cssPositioningProp'     .fg_purple_light
 :exe 'hi cssBoxProp'             .fg_purple_light
+:exe 'hi cssMediaProp'           .fg_purple_light
 :exe 'hi cssFlexibleBoxProp'     .fg_purple_light
 :exe 'hi cssColor'               .fg_gray30
 :exe 'hi cssClassName'           .fg_purple_xlight . gui_bold
