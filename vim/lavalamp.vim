@@ -247,6 +247,7 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi cssAttrComma'           .fg_purple_dark
 :exe 'hi cssAttr'                .fg_gray30
 :exe 'hi cssClassName'           .fg_purple_xlight
+:exe 'hi cssIdentifier'          .fg_purple_dark . gui_bold
 :exe 'hi cssBraces'              .fg_purple_xdark
 :exe 'hi cssNoise'               .fg_purple_dark
 :exe 'hi cssMediaQuery'          .fg_purple_dark
@@ -363,6 +364,7 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi javascriptFuncArg'       .fg_white
 :exe 'hi javascriptGlobalObjects' .fg_white
 :exe 'hi javascriptEndColons'     .fg_gray50
+:exe 'hi javascriptNull'          .fg_white . gui_bold
 
 "Highlighting groups for various occasions
 "-----------------------------------------
