@@ -14,9 +14,14 @@ For example, HTML uses shades of blue while Ruby uses red. Then it's easy to see
 
 ![](http://cl.ly/image/3X091e0c3U11/content)
 
-Similarly, vanilla CSS uses purple (an homage to [@mdo](https://github.com/mdo)) and Sass is red (since it's Ruby):
+CSS uses purple (an homage to [@mdo](https://github.com/mdo)):
+
+![](http://cl.ly/image/0W223O123E1t/content)
+
+In a Sass file, it's easy to see vanilla CSS vs. Sass (which is red, since it's Ruby):
 
 ![](http://cl.ly/image/10100y1Q3g25/content)
+
 
 I've chosen green for Javascript:
 
