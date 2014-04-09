@@ -1,4 +1,10 @@
-Lavalamp is a WIP text editor theme. It currently works in Vim, but I hope to port it to Atom and Sublime Text.
+![](http://cl.ly/image/320J0E0d2p3W/content)
+
+### Lavalamp is a WIP text editor theme. 
+
+**It currently works in Vim, but I hope to port it to Atom and Sublime Text.**
+
+====
 
 ### Design principles
 
