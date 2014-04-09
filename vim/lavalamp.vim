@@ -234,7 +234,7 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi htmlString'             .fg_blue_xlight
 :exe 'hi htmlArg'                .fg_blue_dark
 :exe 'hi htmlTitle'              .fg_white . gui_bold
-:exe 'hi htmlBold'               .fg_gray50 . gui_bold
+:exe 'hi htmlBold'               .fg_gray30 . gui_bold
 :exe 'hi htmlItalic'             .gui_italic
 :exe 'hi htmlH1'                 .fg_white . gui_bold
 :exe 'hi htmlH2'                 .fg_white
@@ -256,6 +256,7 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi cssFontProp'            .fg_purple_light
 :exe 'hi cssUIProp'              .fg_purple_light
 :exe 'hi cssPageProp'            .fg_purple_light
+:exe 'hi cssTransformProp'       .fg_purple_light
 :exe 'hi cssDimensionProp'       .fg_purple_light
 :exe 'hi cssBackgroundProp'      .fg_purple_light
 :exe 'hi cssTransitionProp'      .fg_purple_light
@@ -268,6 +269,8 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi cssBoxProp'             .fg_purple_light
 :exe 'hi cssMediaProp'           .fg_purple_light
 :exe 'hi cssFlexibleBoxProp'     .fg_purple_light
+:exe 'hi cssFunctionName'        .fg_purple_xlight
+:exe 'hi cssURL'                 .fg_gray30
 :exe 'hi cssColor'               .fg_gray30
 :exe 'hi cssClassName'           .fg_purple_xlight . gui_bold
 :exe 'hi cssImportant'           .fg_purple_med  . gui_bold
