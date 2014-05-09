@@ -317,6 +317,8 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :exe 'hi rubySharpBang'          .fg_red_xdark
 
 " Coffeescript
+:exe 'hi coffeeGlobal'           .fg_white . gui_bold
+:exe 'hi coffeeInterpDelim'      .fg_white . gui_bold
 :exe 'hi coffeeExtendedOp'       .fg_brown_light
 :exe 'hi coffeeParen'            .fg_brown_dark
 :exe 'hi coffeeBracket'          .fg_brown_dark
