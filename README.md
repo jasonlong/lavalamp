@@ -13,6 +13,12 @@ Copy `lavalamp.vim` to your `.vim/colors` directory.
     $ cd lavalamp/vim
     $ cp lavalamp.vim ~/.vim/colors/
     
+Then update your `.vimrc` with these lines:
+
+    syntax enable
+    set background=dark
+    colorscheme lavalamp
+    
 If you're using [airline](https://github.com/bling/vim-airline), you can install the lavalamp theme for that.
 
     $ cd lavalamp/vim/autoload/airline/themes
