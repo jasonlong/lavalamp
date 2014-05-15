@@ -6,6 +6,22 @@
 
 ====
 
+### Installation
+
+Copy `lavalamp.vim` to your `.vim/colors` directory.
+
+    $ cd lavalamp/vim
+    $ cp lavalamp.vim ~/.vim/colors/
+    
+If you're using [airline](https://github.com/bling/vim-airline), you can install the lavalamp theme for that.
+
+    $ cd lavalamp/vim/autoload/airline/themes
+    $ cp lavalamp.vim ~/.vim/autoload/airline/themes/
+    
+For the iTerm theme, you should be able to double-click on the `lavalamp/iterm/lavalamp.itermcolors` file to install it.
+    
+**If you're using CoffeeScript, I highly recommend installing the [vim-coffee-script](https://github.com/kchmck/vim-coffee-script) plugin since it offers much better syntax highlighting (which lavalamp utilizes).**
+
 ### Design principles
 
 The idea behind the theme is that each language has its own core color. This way, it's easier to visually differentiate languages when they're used together.
