@@ -1,4 +1,3 @@
-set background=dark
 highlight clear
 if exists("syntax_on")
   syntax reset
@@ -14,16 +13,30 @@ let g:colors_name = "lavalamp"
 :let fg_black  = ' guifg='.black
 
 " darkest to lightest
-:let gray110 = '#20272b'
-:let gray100 = '#252c31'
-:let gray90  = '#323b42'
-:let gray80  = '#353c40'
-:let gray70  = '#5d6366'
-:let gray60  = '#818588'
-:let gray50  = '#9ea1a3'
-:let gray40  = '#babcbd'
-:let gray30  = '#d4d5d6'
-:let gray20  = '#ebecec'
+if &background == "dark"
+  :let gray110 = '#20272b'
+  :let gray100 = '#252c31'
+  :let gray90  = '#323b42'
+  :let gray80  = '#353c40'
+  :let gray70  = '#5d6366'
+  :let gray60  = '#818588'
+  :let gray50  = '#9ea1a3'
+  :let gray40  = '#babcbd'
+  :let gray30  = '#d4d5d6'
+  :let gray20  = '#ebecec'
+
+elseif &background == "light"
+  :let gray20  = '#20272b'
+  :let gray30  = '#252c31'
+  :let gray40  = '#323b42'
+  :let gray50  = '#353c40'
+  :let gray60  = '#5d6366'
+  :let gray70  = '#818588'
+  :let gray80  = '#9ea1a3'
+  :let gray90  = '#babcbd'
+  :let gray100 = '#d4d5d6'
+  :let gray110 = '#ebecec'
+endif
 
 :let bg_gray110 = ' guibg='.gray110
 :let bg_gray100 = ' guibg='.gray100
@@ -33,7 +46,7 @@ let g:colors_name = "lavalamp"
 :let bg_gray60  = ' guibg='.gray60
 :let bg_gray50  = ' guibg='.gray50
 :let bg_gray40  = ' guibg='.gray40
-:let bg_gray40  = ' guibg='.gray40
+:let bg_gray30  = ' guibg='.gray30
 :let bg_gray20  = ' guibg='.gray20
 
 :let fg_gray110 = ' guifg='.gray110
@@ -341,6 +354,8 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 
 " Javascript
 " Best with https://github.com/jelera/vim-javascript-syntax
+:exe 'hi javascriptPrototype'     .fg_green_med
+:exe 'hi javascriptSpecial'       .fg_green_xdark . gui_bold
 :exe 'hi javascriptMember'        .fg_green_med
 :exe 'hi javascriptParens'        .fg_green_dark
 :exe 'hi javascriptBraces'        .fg_green_xdark
