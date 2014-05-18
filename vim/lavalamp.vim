@@ -13,30 +13,17 @@ let g:colors_name = "lavalamp"
 :let fg_black  = ' guifg='.black
 
 " darkest to lightest
-if &background == "dark"
-  :let gray110 = '#20272b'
-  :let gray100 = '#252c31'
-  :let gray90  = '#323b42'
-  :let gray80  = '#353c40'
-  :let gray70  = '#5d6366'
-  :let gray60  = '#818588'
-  :let gray50  = '#9ea1a3'
-  :let gray40  = '#babcbd'
-  :let gray30  = '#d4d5d6'
-  :let gray20  = '#ebecec'
-
-elseif &background == "light"
-  :let gray20  = '#20272b'
-  :let gray30  = '#252c31'
-  :let gray40  = '#323b42'
-  :let gray50  = '#353c40'
-  :let gray60  = '#5d6366'
-  :let gray70  = '#818588'
-  :let gray80  = '#9ea1a3'
-  :let gray90  = '#babcbd'
-  :let gray100 = '#d4d5d6'
-  :let gray110 = '#ebecec'
-endif
+:let gray110 = '#20272b'
+:let gray100 = '#252c31'
+:let gray90  = '#323b42'
+:let gray80  = '#353c40'
+:let gray70  = '#5d6366'
+:let gray60  = '#818588'
+:let gray50  = '#9ea1a3'
+:let gray40  = '#babcbd'
+:let gray30  = '#d4d5d6'
+:let gray20  = '#ebecec'
+:let gray10  = '#f1f1f1'
 
 :let bg_gray110 = ' guibg='.gray110
 :let bg_gray100 = ' guibg='.gray100
@@ -48,6 +35,7 @@ endif
 :let bg_gray40  = ' guibg='.gray40
 :let bg_gray30  = ' guibg='.gray30
 :let bg_gray20  = ' guibg='.gray20
+:let bg_gray10  = ' guibg='.gray10
 
 :let fg_gray110 = ' guifg='.gray110
 :let fg_gray100 = ' guifg='.gray100
@@ -206,38 +194,75 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :let gui_bold   = ' gui=bold'
 :let gui_italic = ' gui=italic'
 
-:exe 'hi Normal'                 .bg_gray110 . fg_gray30
-:exe 'hi NonText'                .fg_gray80
-:exe 'hi Cursor'                 .bg_blue_med
-:exe 'hi LineNR'                 .fg_gray60
-:exe 'hi CursorLineNR'           .fg_gray30
-:exe 'hi CursorLine'             .bg_gray100
-:exe 'hi CursorColumn'           .bg_gray90
-:exe 'hi Comment'                .fg_gray60
-:exe 'hi Visual'                 .bg_purple_xdark . fg_white
-:exe 'hi Search'                 .bg_yellow_med . fg_gray100
-:exe 'hi IncSearch'              .bg_yellow_med . fg_gray100
-:exe 'hi Constant'               .fg_blue_med
-:exe 'hi Todo'                   .bg_purple_med . fg_gray100
-:exe 'hi Directory'              .fg_white
-:exe 'hi Identifier'             .fg_red_med
-:exe 'hi Statement'              .fg_gray30
-:exe "hi Special"                .fg_red_med
-:exe "hi Underlined"             .fg_blue_med
-:exe "hi Ignore"                 .fg_none . bg_none
-:exe "hi Error"                  .bg_red_med . fg_gray100
-:exe "hi VertSplit"              .bg_gray90 . fg_gray90 . gui_none
-:exe "hi MatchParen"             .bg_blue_xdark . fg_blue_xlight
+if &background == "dark"
+  :exe 'hi Normal'                 .bg_gray110 . fg_gray30
+  :exe 'hi NonText'                .fg_gray80
+  :exe 'hi Cursor'                 .bg_blue_med
+  :exe 'hi LineNR'                 .fg_gray60
+  :exe 'hi CursorLineNR'           .fg_gray30
+  :exe 'hi CursorLine'             .bg_gray100
+  :exe 'hi CursorColumn'           .bg_gray90
+  :exe 'hi Comment'                .fg_gray60
+  :exe 'hi Visual'                 .bg_purple_xdark . fg_white
+  :exe 'hi Search'                 .bg_yellow_med . fg_gray100
+  :exe 'hi IncSearch'              .bg_yellow_med . fg_gray100
+  :exe 'hi Constant'               .fg_blue_med
+  :exe 'hi Todo'                   .bg_purple_med . fg_gray100
+  :exe 'hi Directory'              .fg_white
+  :exe 'hi Identifier'             .fg_red_med
+  :exe 'hi Statement'              .fg_gray30
+  :exe "hi Special"                .fg_red_med
+  :exe "hi Underlined"             .fg_blue_med
+  :exe "hi Ignore"                 .fg_none . bg_none
+  :exe "hi Error"                  .bg_red_med . fg_gray100
+  :exe "hi VertSplit"              .bg_gray90 . fg_gray90 . gui_none
+  :exe "hi MatchParen"             .bg_blue_xdark . fg_blue_xlight
 
-:exe "hi Pmenu"                  .bg_blue_xdark . fg_white
-:exe "hi PmenuSel"               .bg_blue_xlight . fg_blue_xdark
-:exe "hi PmenuSbar"              .bg_blue_xdark . fg_gray100
+  :exe "hi Pmenu"                  .bg_blue_xdark . fg_white
+  :exe "hi PmenuSel"               .bg_blue_xlight . fg_blue_xdark
+  :exe "hi PmenuSbar"              .bg_blue_xdark . fg_gray100
 
-:exe "hi EasyMotionTarget"       .bg_gray110 . fg_yellow_med
-:exe "hi EasyMotionShade"        .bg_gray110 . fg_gray70
+  :exe "hi EasyMotionTarget"       .bg_gray110 . fg_yellow_med
+  :exe "hi EasyMotionShade"        .bg_gray110 . fg_gray70
+else
+  :exe 'hi Normal'                 .bg_gray10 . fg_gray70
+  :exe 'hi NonText'                .fg_gray80
+  :exe 'hi Cursor'                 .bg_blue_med
+  :exe 'hi LineNR'                 .fg_gray50
+  :exe 'hi CursorLineNR'           .fg_gray30
+  :exe 'hi CursorLine'             .bg_gray20
+  :exe 'hi CursorColumn'           .bg_gray90
+  :exe 'hi Comment'                .fg_gray80
+  :exe 'hi Visual'                 .bg_purple_xdark . fg_white
+  :exe 'hi Search'                 .bg_yellow_med . fg_gray100
+  :exe 'hi IncSearch'              .bg_yellow_med . fg_gray100
+  :exe 'hi Constant'               .fg_blue_med
+  :exe 'hi Todo'                   .bg_purple_med . fg_gray100
+  :exe 'hi Directory'              .fg_white
+  :exe 'hi Identifier'             .fg_red_med
+  :exe 'hi Statement'              .fg_gray30
+  :exe "hi Special"                .fg_red_med
+  :exe "hi Underlined"             .fg_blue_med
+  :exe "hi Ignore"                 .fg_none . bg_none
+  :exe "hi Error"                  .bg_red_med . fg_gray100
+  :exe "hi VertSplit"              .bg_gray90 . fg_gray90 . gui_none
+  :exe "hi MatchParen"             .bg_blue_xdark . fg_blue_xlight
+
+  :exe "hi Pmenu"                  .bg_blue_xdark . fg_white
+  :exe "hi PmenuSel"               .bg_blue_xlight . fg_blue_xdark
+  :exe "hi PmenuSbar"              .bg_blue_xdark . fg_gray100
+
+  :exe "hi EasyMotionTarget"       .bg_gray10 . fg_red_med
+  :exe "hi EasyMotionShade"        .bg_gray10 . fg_gray40
+endif
 
 " Vim
-:exe 'hi vimLineComment'         .fg_gray60
+if &background == "dark"
+  :exe 'hi vimLineComment'         .fg_gray60
+else
+  :exe 'hi vimLineComment'         .fg_gray50
+  :exe 'hi vimCommand'             .fg_gray70
+endif
 
 " HTML
 :exe 'hi htmlTag'                .fg_blue_muted
