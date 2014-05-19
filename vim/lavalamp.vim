@@ -23,7 +23,7 @@ let g:colors_name = "lavalamp"
 :let gray40  = '#babcbd'
 :let gray30  = '#d4d5d6'
 :let gray20  = '#ebecec'
-:let gray10  = '#f1f1f1'
+:let gray10  = '#f5f5f5'
 
 :let bg_gray110 = ' guibg='.gray110
 :let bg_gray100 = ' guibg='.gray100
