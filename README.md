@@ -28,6 +28,12 @@ For the iTerm theme, you should be able to double-click on the `lavalamp/iterm/l
     
 **If you're using CoffeeScript, I highly recommend installing the [vim-coffee-script](https://github.com/kchmck/vim-coffee-script) plugin since it offers much better syntax highlighting (which lavalamp utilizes).**
 
+#### Terminal Vim
+
+If you're running Vim in a terminal (as opposed to MacVim, etc.) this colorscheme won't work by default. You can use the [CSApprox](http://www.vim.org/scripts/script.php?script_id=2390) plugin to get it working though. You also may need to add this line to your `.vimrc`:
+
+    set t_Co=256
+
 ### Design principles
 
 The idea behind the theme is that each language has its own core color. This way, it's easier to visually differentiate languages when they're used together.
