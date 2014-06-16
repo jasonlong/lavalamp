@@ -60,6 +60,22 @@ And browns for Coffeescript:
 ![](http://cl.ly/image/3x0k3Q262g0m/content)
 
 
+### Contributing
+
+1. Fork it ( http://github.com/jasonlong/lavalamp/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+If you'd like to add support for addtional languages, you'll need to add new entries for each syntax scope. I have found [vim-HiLinkTrace](https://github.com/gerw/vim-HiLinkTrace) to be very handy for figuring out what a given scope a character is in. Once you've installed that (via Vundle, NeoBundle, etc.), you can add a keyboard shortcut to your `.vimrc`. This is what I use:
+
+````
+nmap <leader>h :HLT<CR>
+````
+
+Then, when your cursor is over a character you want to know about, hit `<leader>h` and the syntax scope will be shown at the bottom of your Vim window. Create a new line with this in `lavalamp.vim`.
+
 ### Roadmap
 
 I've been using this theme for a while in this state since these are the languages I mostly use. If more people want to use the theme, more languages will need to be fleshed out.
