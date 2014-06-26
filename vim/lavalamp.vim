@@ -599,6 +599,10 @@ endif
 :exe 'hi javascriptEndColons'     .fg_gray50
 :exe 'hi jsNull'                  .fg_white . gui_bold
 :exe 'hi javascriptNull'          .fg_white . gui_bold
+:exe 'hi javascriptStatement'     .fg_green_light
+:exe 'hi javascriptRepeat'        .fg_green_light
+
+" JST/EJS
 :exe 'hi jstDelimiter'            .fg_green_xlight
 
 " Git
