@@ -536,6 +536,8 @@ endif
 :exe 'hi javascriptGlobalObjects' .fg_white
 :exe 'hi javascriptEndColons'     .fg_gray50
 :exe 'hi javascriptNull'          .fg_white . gui_bold
+:exe 'hi javascriptStatement'     .fg_green_light
+:exe 'hi javascriptRepeat'        .fg_green_light
 
 " Git
 if &background == "dark"
