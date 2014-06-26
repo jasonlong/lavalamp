@@ -505,37 +505,100 @@ endif
 
 " Javascript
 " Best with https://github.com/jelera/vim-javascript-syntax
-:exe 'hi jsPrototype'     .fg_green_med
-:exe 'hi jsSpecial'       .fg_green_xdark . gui_bold
-:exe 'hi jsMember'        .fg_green_med
-:exe 'hi jsParens'        .fg_green_dark
-:exe 'hi jsBraces'        .fg_green_xdark
-:exe 'hi jsString'        .fg_green_xlight
-:exe 'hi jsStringS'       .fg_green_xlight
-:exe 'hi jsStringD'       .fg_green_xlight
-:exe 'hi jsFunction'      .fg_green_med
-:exe 'hi jsConditional'   .fg_green_med
-:exe 'hi jsIdentifier'    .fg_green_dark
-:exe 'hi jsBoolean'       .fg_green_light
-:exe 'hi jsNumber'        .fg_green_light
-:exe 'hi jsFloat'         .fg_green_light
-:exe 'hi jsRegExpString'  .fg_green_light
-:exe 'hi jsFuncKeyword'   .fg_green_light
-:exe 'hi jsBrowserObjects'.fg_green_dark
-:exe 'hi jsDOMObjects'    .fg_green_dark
-:exe 'hi jsDOMMethods'    .fg_green_dark
-:exe 'hi jsHtmlEvents'    .fg_green_xlight
-:exe 'hi jsEventListenerKeywords'    .fg_green_xlight
-:exe 'hi jsWebAPI'        .fg_white
-:exe 'hi jsFuncExp'       .fg_white . gui_bold
-:exe 'hi jsFuncDef'       .fg_white . gui_bold
-:exe 'hi jsLogicSymbols'  .fg_gray30 . gui_bold
-:exe 'hi jsGlobal'        .fg_white
-:exe 'hi jsMessage'       .fg_white
-:exe 'hi jsFuncArg'       .fg_white
-:exe 'hi jsGlobalObjects' .fg_white
-:exe 'hi jsEndColons'     .fg_gray50
-:exe 'hi jsNull'          .fg_white . gui_bold
+:exe 'hi jsPrototype'             .fg_green_med
+:exe 'hi javascriptPrototype'     .fg_green_med
+:exe 'hi jsExceptions'            .fg_green_med
+:exe 'hi javascriptExceptions'    .fg_green_med
+:exe 'hi jsSpecial'               .fg_green_xdark . gui_bold
+:exe 'hi javascriptSpecial'       .fg_green_xdark . gui_bold
+:exe 'hi jsBuiltins'              .fg_green_xdark . gui_bold
+:exe 'hi javascriptBuiltins'      .fg_green_xdark . gui_bold
+:exe 'hi jsGlobalObjects'         .fg_green_xdark . gui_bold
+:exe 'hi javascriptGlobalObjects' .fg_green_xdark . gui_bold
+:exe 'hi jsSpecial'               .fg_green_xdark . gui_bold
+:exe 'hi javascriptSpecial'       .fg_green_xdark . gui_bold
+:exe 'hi jsMember'                .fg_green_med
+:exe 'hi javascriptMember'        .fg_green_med
+:exe 'hi jsArgsObj'               .fg_green_med
+:exe 'hi javascripArgsObj'        .fg_green_med
+:exe 'hi jsParens'                .fg_green_dark
+:exe 'hi javascriptParens'        .fg_green_dark
+:exe 'hi jsThis'                  .fg_green_dark . gui_bold
+:exe 'hi javascriptThis'          .fg_green_dark . gui_bold
+:exe 'hi jsFuncParens'            .fg_green_dark
+:exe 'hi javascriptFuncParens'    .fg_green_dark
+:exe 'hi jsBraces'                .fg_green_xdark
+:exe 'hi javascriptBraces'        .fg_green_xdark
+:exe 'hi jsString'                .fg_green_xlight
+:exe 'hi javascriptString'        .fg_green_xlight
+:exe 'hi jsStringS'               .fg_green_xlight
+:exe 'hi javascriptStringS'       .fg_green_xlight
+:exe 'hi jsStringD'               .fg_green_xlight
+:exe 'hi javascriptStringD'       .fg_green_xlight
+:exe 'hi jsFunction'              .fg_green_med
+:exe 'hi javascriptFunction'      .fg_green_med
+:exe 'hi jsConditional'           .fg_green_med
+:exe 'hi javascriptConditional'   .fg_green_med
+:exe 'hi jsReturn'                .fg_green_med
+:exe 'hi javascriptReturn'        .fg_green_med
+:exe 'hi jsRepeat'                .fg_green_med
+:exe 'hi javascriptRepeat'        .fg_green_med
+:exe 'hi jsFuncName'              .fg_green_dark
+:exe 'hi javascriptFuncName'      .fg_green_dark
+:exe 'hi jsIdentifier'            .fg_green_dark
+:exe 'hi javascriptIdentifier'    .fg_green_dark
+:exe 'hi jsBoolean'               .fg_green_light
+:exe 'hi javascriptBoolean'       .fg_green_light
+:exe 'hi jsBooleanTrue'           .fg_green_light
+:exe 'hi javascriptBooleanTrue'   .fg_green_light
+:exe 'hi jsBooleanFalse'          .fg_green_light
+:exe 'hi javascriptBooleanFalse'  .fg_green_light
+:exe 'hi jsNumber'                .fg_green_light
+:exe 'hi javascriptNumber'        .fg_green_light
+:exe 'hi jsFloat'                 .fg_green_light
+:exe 'hi javascriptFloat'         .fg_green_light
+:exe 'hi jsRegexpString'          .fg_green_light
+:exe 'hi javascriptRegExpString'  .fg_green_light
+:exe 'hi jsRegexpBoundary'        .fg_green_light
+:exe 'hi javascriptRegexpBoundary'.fg_green_light
+:exe 'hi jsRegexpMod'             .fg_green_light
+:exe 'hi javascriptRegexpMod'     .fg_green_light
+:exe 'hi jsRegexpCharClass'               .fg_green_light
+:exe 'hi javascriptRegexpCharClass'       .fg_green_light
+:exe 'hi jsRegexpQuantifier'              .fg_green_light
+:exe 'hi javascriptRegexpQuantifier'      .fg_green_light
+:exe 'hi jsFuncKeyword'           .fg_green_light
+:exe 'hi javascriptFuncKeyword'   .fg_green_light
+:exe 'hi jsBrowserObjects'        .fg_green_dark
+:exe 'hi javascriptBrowserObjects'.fg_green_dark
+:exe 'hi jsDOMObjects'            .fg_green_dark
+:exe 'hi javascriptDOMObjects'    .fg_green_dark
+:exe 'hi jsDOMMethods'            .fg_green_dark
+:exe 'hi javascriptDOMMethods'    .fg_green_dark
+:exe 'hi jsHtmlEvents'            .fg_green_xlight
+:exe 'hi javascriptHtmlEvents'    .fg_green_xlight
+:exe 'hi jsEventListenerKeywords'            .fg_green_xlight
+:exe 'hi javascriptEventListenerKeywords'    .fg_green_xlight
+:exe 'hi jsWebAPI'                .fg_white
+:exe 'hi javascriptWebAPI'        .fg_white
+:exe 'hi jsFuncExp'               .fg_white . gui_bold
+:exe 'hi javascriptFuncExp'       .fg_white . gui_bold
+:exe 'hi jsFuncDef'               .fg_white . gui_bold
+:exe 'hi javascriptFuncDef'       .fg_white . gui_bold
+:exe 'hi jsLogicSymbols'          .fg_gray30 . gui_bold
+:exe 'hi javascriptLogicSymbols'  .fg_gray30 . gui_bold
+:exe 'hi jsGlobal'                .fg_white
+:exe 'hi javascriptGlobal'        .fg_white
+:exe 'hi jsMessage'               .fg_white
+:exe 'hi javascriptMessage'       .fg_white
+:exe 'hi jsFuncArg'               .fg_white
+:exe 'hi javascriptFuncArg'       .fg_white
+:exe 'hi jsGlobalObjects'         .fg_white
+:exe 'hi javascriptGlobalObjects' .fg_white
+:exe 'hi jsEndColons'             .fg_gray50
+:exe 'hi javascriptEndColons'     .fg_gray50
+:exe 'hi jsNull'                  .fg_white . gui_bold
+:exe 'hi javascriptNull'          .fg_white . gui_bold
 
 " Git
 if &background == "dark"
