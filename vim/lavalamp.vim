@@ -599,6 +599,7 @@ endif
 :exe 'hi javascriptEndColons'     .fg_gray50
 :exe 'hi jsNull'                  .fg_white . gui_bold
 :exe 'hi javascriptNull'          .fg_white . gui_bold
+:exe 'hi jstDelimiter'            .fg_green_xlight
 
 " Git
 if &background == "dark"
