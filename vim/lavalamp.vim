@@ -504,7 +504,8 @@ else
 endif
 
 " Javascript
-" Best with https://github.com/jelera/vim-javascript-syntax
+" The javascript prefixed versions rely on https://github.com/jelera/vim-javascript-syntax
+" which is recommended.
 :exe 'hi jsPrototype'             .fg_green_med
 :exe 'hi javascriptPrototype'     .fg_green_med
 :exe 'hi jsExceptions'            .fg_green_med
