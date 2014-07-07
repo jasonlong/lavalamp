@@ -307,6 +307,8 @@ if &background == "dark"
   :exe 'hi cssClassName'           .fg_purple_xlight
   :exe 'hi cssIdentifier'          .fg_purple_dark . gui_bold
   :exe 'hi cssBraces'              .fg_purple_xdark
+  :exe 'hi cssSelectorOp'          .fg_purple_xdark
+  :exe 'hi cssSelectorOp2'         .fg_purple_xdark
   :exe 'hi cssNoise'               .fg_purple_dark
   :exe 'hi cssMediaQuery'          .fg_purple_dark
   :exe 'hi cssMedia'               .fg_gray30. gui_bold
@@ -336,8 +338,11 @@ if &background == "dark"
   :exe 'hi cssValueLength'         .fg_gray30
   :exe 'hi cssValueTime'           .fg_gray30
   :exe 'hi cssCommonAttr'          .fg_gray60
+  :exe 'hi cssRenderProp'          .fg_gray60
   :exe 'hi cssUnitDecorators'      .fg_gray60
   :exe 'hi cssValueNumber'         .fg_gray30
+  :exe 'hi cssRenderAttr'          .fg_gray30
+  :exe 'hi cssUIAttr'              .fg_gray30
   :exe 'hi cssPseudoClass'         .fg_purple_xlight
   :exe 'hi sassProperty'           .fg_red_dark
   :exe 'hi sassMixing'             .fg_red_dark
@@ -358,6 +363,8 @@ else
   :exe 'hi cssClassName'           .fg_purple_xdark
   :exe 'hi cssIdentifier'          .fg_purple_light . gui_bold
   :exe 'hi cssBraces'              .fg_purple_xlight
+  :exe 'hi cssSelectorOp'          .fg_purple_xlight
+  :exe 'hi cssSelectorOp2'         .fg_purple_xlight
   :exe 'hi cssNoise'               .fg_purple_light
   :exe 'hi cssMediaQuery'          .fg_purple_light
   :exe 'hi cssMedia'               .fg_gray90. gui_bold
@@ -387,8 +394,11 @@ else
   :exe 'hi cssValueLength'         .fg_gray90
   :exe 'hi cssValueTime'           .fg_gray90
   :exe 'hi cssCommonAttr'          .fg_gray60
+  :exe 'hi cssRenderProp'          .fg_gray60
   :exe 'hi cssUnitDecorators'      .fg_gray60
   :exe 'hi cssValueNumber'         .fg_gray90
+  :exe 'hi cssRenderAttr'          .fg_gray90
+  :exe 'hi cssUIAttr'              .fg_gray90
   :exe 'hi cssPseudoClass'         .fg_purple_xdark
   :exe 'hi sassProperty'           .fg_red_light
   :exe 'hi sassComment'            .fg_gray50
@@ -504,8 +514,7 @@ else
 endif
 
 " Javascript
-" The javascript prefixed versions rely on https://github.com/jelera/vim-javascript-syntax
-" which is recommended.
+" Best with https://github.com/jelera/vim-javascript-syntax
 :exe 'hi jsPrototype'             .fg_green_med
 :exe 'hi javascriptPrototype'     .fg_green_med
 :exe 'hi jsExceptions'            .fg_green_med
