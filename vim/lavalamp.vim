@@ -608,6 +608,7 @@ endif
 :exe 'hi jstDelimiter'            .fg_green_xlight
 
 " Python
+" using python syntax: https://github.com/hdima/python-syntax
 if &background == "dark"
   :exe 'hi pythonStatement'       .fg_white . gui_bold
   :exe 'hi pythonDecorator'       .fg_yellow_xlight . gui_bold
