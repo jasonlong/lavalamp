@@ -114,11 +114,13 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :let orange_dark   = '#d18747'
 :let orange_xdark  = '#c2691d'
 
-:let yellow_xlight = '#f8f18c'
-:let yellow_light  = '#f8ee65'
-:let yellow_med    = '#f1e432'
-:let yellow_dark   = '#b5ad49'
-:let yellow_xdark  = '#9d9310'
+:let yellow_xlight      = '#fbb917'
+:let yellow_light       = '#fdd017'
+:let yellow_light_soft  = '#ffdb58'
+:let yellow_med         = '#f1e432'
+:let yellow_dark        = '#e9ab17'
+:let yellow_xdark       = '#9d9310'
+:let yellow_muted       = '#ede275'
 
 :let green_xlight = '#c3e881'
 :let green_light  = '#b6e85c'
@@ -152,17 +154,21 @@ let fg_purple_xdark  = ' guifg='.purple_xdark
 :let fg_orange_dark   = ' guifg='.orange_dark
 :let fg_orange_xdark  = ' guifg='.orange_xdark
 
-:let fg_yellow_xlight = ' guifg='.yellow_xlight
-:let fg_yellow_light  = ' guifg='.yellow_light
-:let fg_yellow_med    = ' guifg='.yellow_med
-:let fg_yellow_dark   = ' guifg='.yellow_dark
-:let fg_yellow_xdark  = ' guifg='.yellow_xdark
+:let fg_yellow_xlight     = ' guifg='.yellow_xlight
+:let fg_yellow_light      = ' guifg='.yellow_light
+:let fg_yellow_med        = ' guifg='.yellow_med
+:let fg_yellow_dark       = ' guifg='.yellow_dark
+:let fg_yellow_xdark      = ' guifg='.yellow_xdark
+:let fg_yellow_muted      = ' guifg='.yellow_muted
+:let fg_yellow_light_soft = ' guifg='.yellow_light_soft
 
-:let bg_yellow_xlight = ' guibg='.yellow_xlight
-:let bg_yellow_light  = ' guibg='.yellow_light
-:let bg_yellow_med    = ' guibg='.yellow_med
-:let bg_yellow_dark   = ' guibg='.yellow_dark
-:let bg_yellow_xdark  = ' guibg='.yellow_xdark
+:let bg_yellow_xlight     = ' guibg='.yellow_xlight
+:let bg_yellow_light      = ' guibg='.yellow_light
+:let bg_yellow_med        = ' guibg='.yellow_med
+:let bg_yellow_dark       = ' guibg='.yellow_dark
+:let bg_yellow_xdark      = ' guibg='.yellow_xdark
+:let bg_yellow_muted      = ' guibg='.yellow_muted
+:let bg_yellow_light_soft = ' guibg='.yellow_light_soft
 
 :let fg_green_xlight = ' guifg='.green_xlight
 :let fg_green_light  = ' guifg='.green_light
@@ -504,8 +510,7 @@ else
 endif
 
 " Javascript
-" The javascript prefixed versions rely on https://github.com/jelera/vim-javascript-syntax
-" which is recommended.
+" Best with https://github.com/jelera/vim-javascript-syntax
 :exe 'hi jsPrototype'             .fg_green_med
 :exe 'hi javascriptPrototype'     .fg_green_med
 :exe 'hi jsExceptions'            .fg_green_med
@@ -600,11 +605,27 @@ endif
 :exe 'hi javascriptEndColons'     .fg_gray50
 :exe 'hi jsNull'                  .fg_white . gui_bold
 :exe 'hi javascriptNull'          .fg_white . gui_bold
-:exe 'hi javascriptStatement'     .fg_green_light
-:exe 'hi javascriptRepeat'        .fg_green_light
-
-" JST/EJS
 :exe 'hi jstDelimiter'            .fg_green_xlight
+
+" Python
+if &background == "dark"
+  :exe 'hi pythonStatement'       .fg_white . gui_bold
+  :exe 'hi pythonDecorator'       .fg_yellow_xlight . gui_bold
+  :exe 'hi pythonFunction'        .fg_yellow_light
+  :exe 'hi pythonRepeat'          .fg_yellow_light
+  :exe 'hi pythonOperator'        .fg_yellow_light
+  :exe 'hi djangoVarBlock'        .fg_yellow_med
+  :exe 'hi pythonConditional'     .fg_yellow_med
+  :exe 'hi pythonException'       .fg_yellow_dark
+  :exe 'hi djangoArgument'        .fg_yellow_dark
+  :exe 'hi pythonString'          .fg_yellow_dark
+  :exe 'hi pythonBuiltin'         .fg_yellow_xdark
+  :exe 'hi pythonBoolean'         .fg_yellow_xdark
+  :exe 'hi pythonNumber'          .fg_yellow_xdark
+  :exe 'hi pythonImport'          .fg_yellow_muted
+  :exe 'hi pythonDottedName'      .fg_yellow_muted
+  :exe 'hi djangoTagBlock'        .fg_yellow_muted
+endif
 
 " Git
 if &background == "dark"
