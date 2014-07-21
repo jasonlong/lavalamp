@@ -626,6 +626,30 @@ if &background == "dark"
   :exe 'hi pythonImport'          .fg_yellow_muted
   :exe 'hi pythonDottedName'      .fg_yellow_muted
   :exe 'hi djangoTagBlock'        .fg_yellow_muted
+else
+endif
+
+" Markdown
+if &background == "dark"
+  :exe 'hi markdownHeadingRule'        .fg_red_med
+  :exe 'hi markdownBlockQuote'         .fg_white
+  :exe 'hi markdownCode'               .fg_white . bg_gray80
+  :exe 'hi markdownCodeBlock'          .fg_white . bg_gray80
+  :exe 'hi markdownH1'                 .fg_white
+  :exe 'hi markdownH2'                 .fg_white
+  :exe 'hi markdownH3'                 .fg_white
+  :exe 'hi markdownH4'                 .fg_white
+  :exe 'hi markdownH5'                 .fg_white
+  :exe 'hi markdownItalic'             .fg_white
+  :exe 'hi markdownBold'               .fg_white
+  :exe 'hi markdownCodeDelimiter'      .fg_blue_med
+  :exe 'hi markdownListMarker'         .fg_blue_med
+  :exe 'hi markdownOrderedListMarker'  .fg_blue_med
+  :exe 'hi markdownLinkText'           .fg_blue_med
+  :exe 'hi markdownUrl'                .fg_blue_light
+  :exe 'hi markdownIdDeclaration'      .fg_red_med
+  :exe 'hi markdownRule'               .fg_gray70
+else
 endif
 
 " Git
@@ -638,7 +662,9 @@ endif
 " Unite
 :exe 'hi uniteSource__GrepFile'  .fg_blue_med
 
-"Highlighting groups for various occasions
+
+
+" Copied from elsewhere for future reference
 "-----------------------------------------
 " exe "hi SpecialKey"     . s:fg_base02 .s:bg_none   .s:fmt_none
 " exe "hi NonText"        . s:fg_base02 .s:bg_none   .s:fmt_bold
