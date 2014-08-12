@@ -337,6 +337,7 @@ if &background == "dark"
   :exe 'hi cssURL'                 .fg_gray30
   :exe 'hi cssColor'               .fg_gray30
   :exe 'hi cssClassName'           .fg_purple_xlight . gui_bold
+  :exe 'hi cssClassNameDot'        .fg_purple_med
   :exe 'hi cssImportant'           .fg_purple_med  . gui_bold
   :exe 'hi cssStringQQ'            .fg_purple_xlight
   :exe 'hi cssValueLength'         .fg_gray30
