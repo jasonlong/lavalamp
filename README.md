@@ -28,7 +28,7 @@ For the iTerm theme, you should be able to double-click on the `lavalamp/iterm/l
 
 **If you're using CoffeeScript, I highly recommend installing the [vim-coffee-script](https://github.com/kchmck/vim-coffee-script) plugin since it offers much better syntax highlighting (which lavalamp utilizes).**
 
-For xterm, you should copy the contents of xterm/Xresources to your ~/.Xresources.
+For xterm, you should copy the contents of `xterm/Xresources` to your `~/.Xresources`.
 
 #### Terminal Vim
 
