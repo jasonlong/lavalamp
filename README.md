@@ -1,6 +1,6 @@
 ![](http://cl.ly/image/320J0E0d2p3W/content)
 
-### Lavalamp is a WIP text editor theme. 
+### Lavalamp is a WIP text editor theme.
 
 **It currently works in Vim, but I hope to port it to Atom and Sublime Text.**
 
@@ -12,21 +12,23 @@ Copy `lavalamp.vim` to your `.vim/colors` directory.
 
     $ cd lavalamp/vim
     $ cp lavalamp.vim ~/.vim/colors/
-    
+
 Then update your `.vimrc` with these lines:
 
     syntax enable
     set background=dark
     colorscheme lavalamp
-    
+
 If you're using [airline](https://github.com/bling/vim-airline), you can install the lavalamp theme for that.
 
     $ cd lavalamp/vim/autoload/airline/themes
     $ cp lavalamp.vim ~/.vim/autoload/airline/themes/
-    
+
 For the iTerm theme, you should be able to double-click on the `lavalamp/iterm/lavalamp.itermcolors` file to install it.
-    
+
 **If you're using CoffeeScript, I highly recommend installing the [vim-coffee-script](https://github.com/kchmck/vim-coffee-script) plugin since it offers much better syntax highlighting (which lavalamp utilizes).**
+
+For xterm, you should copy the contents of xterm/Xresources to your ~/.Xresources.
 
 #### Terminal Vim
 
