@@ -633,10 +633,12 @@ endif
 " Markdown
 if &background == "dark"
   :exe 'hi markdownHeadingRule'        .fg_red_med
-  :exe 'hi markdownBlockQuote'         .fg_white
+  :exe 'hi markdownBlockQuote'         .fg_gray70
+  :exe 'hi markdownBold'               .fg_gray50 . gui_bold
   :exe 'hi markdownCode'               .fg_white . bg_gray80
   :exe 'hi markdownCodeBlock'          .fg_white . bg_gray80
-  :exe 'hi markdownH1'                 .fg_white
+  :exe 'hi markdownHeadingDelimiter'   .fg_gray60
+  :exe 'hi markdownH1'                 .fg_white . gui_bold
   :exe 'hi markdownH2'                 .fg_white
   :exe 'hi markdownH3'                 .fg_white
   :exe 'hi markdownH4'                 .fg_white
