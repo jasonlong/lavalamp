@@ -61,6 +61,10 @@ And browns for Coffeescript:
 
 ![](http://cl.ly/image/3x0k3Q262g0m/content)
 
+The iTerm and Terminal themes look like so:
+
+![](http://cl.ly/image/0y0Q1N2O1D0A/content)
+
 
 ### Contributing
 
