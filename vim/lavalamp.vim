@@ -218,9 +218,6 @@ if &background == "dark"
   :exe "hi Pmenu"                  .bg_blue_xdark . fg_white
   :exe "hi PmenuSel"               .bg_blue_xlight . fg_blue_xdark
   :exe "hi PmenuSbar"              .bg_blue_xdark . fg_gray100
-
-  :exe "hi StatusLineNC"             .bg_blue_med
-
 else
   :exe 'hi Normal'                 .bg_gray10 . fg_gray70
   :exe 'hi NonText'                .fg_gray40
@@ -248,18 +245,43 @@ else
   :exe "hi Pmenu"                  .bg_blue_xlight . fg_white
   :exe "hi PmenuSel"               .bg_blue_xdark . fg_blue_xlight
   :exe "hi PmenuSbar"              .bg_blue_xlight . fg_gray20
-
-  :exe "hi StatusLineNC"             .bg_blue_med
-  " :exe "hi StatusLineNC"   . s:fg_base1  .s:bg_base02 .s:fmt_none
 endif
 
 " Vim
 if &background == "dark"
   :exe 'hi vimLineComment'         .fg_gray60
   :exe 'hi vimCommand'             .fg_gray30
+  :exe 'hi vimSpecial'             .fg_green_light . gui_bold
+  :exe 'hi vimOption'              .fg_green_light . gui_bold
+  :exe 'hi vimEnvvar'              .fg_purple_med
+  :exe 'hi vimAutoEvent'           .fg_green_light
+  :exe 'hi vimString'              .fg_green_med
+  :exe 'hi vimVar'                 .fg_green_xlight
+  :exe 'hi vimFuncName'            .fg_gray20 . gui_bold
+  :exe 'hi vimParenSep'            .fg_gray20
+  :exe 'hi vimSep'                 .fg_gray20
+  :exe 'hi vimCommentTitle'        .fg_gray70 . gui_bold
+  :exe 'hi vimNotation'            .fg_purple_med
+  :exe 'hi vimBracket'             .fg_purple_dark
+  :exe 'hi vimMapModKey'           .fg_purple_med
+  :exe 'hi vimContinue'            .fg_gray60
 else
   :exe 'hi vimLineComment'         .fg_gray50
   :exe 'hi vimCommand'             .fg_gray70
+  :exe 'hi vimSpecial'             .fg_green_dark . gui_bold
+  :exe 'hi vimOption'              .fg_green_dark . gui_bold
+  :exe 'hi vimEnvvar'              .fg_purple_med
+  :exe 'hi vimAutoEvent'           .fg_green_dark
+  :exe 'hi vimString'              .fg_green_med
+  :exe 'hi vimVar'                 .fg_green_xdark
+  :exe 'hi vimFuncName'            .fg_gray100 . gui_bold
+  :exe 'hi vimParenSep'            .fg_gray100
+  :exe 'hi vimSep'                 .fg_gray100
+  :exe 'hi vimCommentTitle'        .fg_gray50 . gui_bold
+  :exe 'hi vimNotation'            .fg_purple_med
+  :exe 'hi vimBracket'             .fg_purple_light
+  :exe 'hi vimMapModKey'           .fg_purple_med
+  :exe 'hi vimContinue'            .fg_gray40
 endif
 
 " HTML
