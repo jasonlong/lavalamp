@@ -52,13 +52,11 @@ let g:colors_name = "lavalamp"
 :let orange = '#ff8638'
 :let purple = '#b111fc'
 
-:let blue_xlight = '#bbe5fe'
-:let blue_light  = '#75cbfe'
-:let blue_med    = '#1ca9fc'
-:let blue_dark   = '#359ad5'
-:let blue_xdark  = '#0e82c6'
-
-:let blue_muted   = '#126998'
+:let blue_xlight = '#61a2e0'
+:let blue_light  = '#398bda'
+:let blue_med    = '#1277d6'
+:let blue_dark   = '#0761b8'
+:let blue_xdark  = '#054787'
 
 :let fg_blue_xlight = ' guifg='.blue_xlight
 :let fg_blue_light  = ' guifg='.blue_light
@@ -92,7 +90,7 @@ let g:colors_name = "lavalamp"
 
 :let fg_purple_xdark  = ' guifg='.purple_xdark
 
-:let fg_blue_muted   = ' guifg='.blue_muted
+:let fg_blue_xdark   = ' guifg='.blue_xdark
 
 :let red_xlight = '#fa8380'
 :let red_light  = '#f75450'
@@ -221,6 +219,8 @@ if &background == "dark"
   :exe "hi PmenuSel"               .bg_blue_xlight . fg_blue_xdark
   :exe "hi PmenuSbar"              .bg_blue_xdark . fg_gray100
 
+  :exe "hi StatusLineNC"             .bg_blue_med
+
 else
   :exe 'hi Normal'                 .bg_gray10 . fg_gray70
   :exe 'hi NonText'                .fg_gray40
@@ -248,11 +248,15 @@ else
   :exe "hi Pmenu"                  .bg_blue_xlight . fg_white
   :exe "hi PmenuSel"               .bg_blue_xdark . fg_blue_xlight
   :exe "hi PmenuSbar"              .bg_blue_xlight . fg_gray20
+
+  :exe "hi StatusLineNC"             .bg_blue_med
+  " :exe "hi StatusLineNC"   . s:fg_base1  .s:bg_base02 .s:fmt_none
 endif
 
 " Vim
 if &background == "dark"
   :exe 'hi vimLineComment'         .fg_gray60
+  :exe 'hi vimCommand'             .fg_gray30
 else
   :exe 'hi vimLineComment'         .fg_gray50
   :exe 'hi vimCommand'             .fg_gray70
@@ -260,8 +264,8 @@ endif
 
 " HTML
 if &background == "dark"
-  :exe 'hi htmlTag'                .fg_blue_muted
-  :exe 'hi htmlEndTag'             .fg_blue_muted
+  :exe 'hi htmlTag'                .fg_blue_xdark
+  :exe 'hi htmlEndTag'             .fg_blue_xdark
   :exe 'hi htmlTagName'            .fg_blue_med
   :exe 'hi htmlTagN'               .fg_blue_med
   :exe 'hi htmlString'             .fg_blue_xlight
@@ -275,8 +279,8 @@ if &background == "dark"
   :exe 'hi htmlH4'                 .fg_white
   :exe 'hi htmlH5'                 .fg_white
 else
-  :exe 'hi htmlTag'                .fg_blue_med
-  :exe 'hi htmlEndTag'             .fg_blue_med
+  :exe 'hi htmlTag'                .fg_blue_xlight
+  :exe 'hi htmlEndTag'             .fg_blue_xlight
   :exe 'hi htmlTagName'            .fg_blue_xdark
   :exe 'hi htmlTagN'               .fg_blue_xdark
   :exe 'hi htmlString'             .fg_blue_xdark
