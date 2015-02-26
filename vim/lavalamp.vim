@@ -115,11 +115,11 @@ let g:colors_name = "lavalamp"
 :let yellow_xdark       = '#9d9310'
 :let yellow_muted       = '#ede275'
 
-:let green_xlight = '#c3e881'
-:let green_light  = '#b6e85c'
-:let green_med    = '#95d129'
-:let green_dark   = '#7b9d3e'
-:let green_xdark  = '#5c880d'
+:let green_xlight = '#4fd860'
+:let green_light  = '#2ECC40'
+:let green_med    = '#06c41d'
+:let green_dark   = '#009513'
+:let green_xdark  = '#00790f'
 
 :let brown_xlight = '#d4ad83'
 :let brown_light  = '#d49f66'
@@ -225,12 +225,12 @@ else
   :exe 'hi Normal'                 .bg_gray10 . fg_gray70
   :exe 'hi NonText'                .fg_gray40
   :exe 'hi Cursor'                 .bg_blue_med
-  :exe 'hi LineNR'                 .fg_gray50
+  :exe 'hi LineNR'                 .fg_gray40
   :exe 'hi CursorLineNR'           .fg_gray90
   :exe 'hi CursorLine'             .bg_gray20
   :exe 'hi CursorColumn'           .bg_gray30
   :exe 'hi Comment'                .fg_gray50
-  :exe 'hi Visual'                 .bg_purple_xlight . fg_white
+  :exe 'hi Visual'                 .bg_purple_light . fg_white
   :exe 'hi Search'                 .bg_yellow_med . fg_gray100
   :exe 'hi IncSearch'              .bg_yellow_med . fg_gray100
   :exe 'hi Constant'               .fg_blue_med
