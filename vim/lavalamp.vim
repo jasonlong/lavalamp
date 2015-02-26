@@ -91,16 +91,10 @@ let g:colors_name = "lavalamp"
 :let bg_purple_dark   = ' guibg='.purple_dark
 :let bg_purple_xdark  = ' guibg='.purple_xdark
 
-let fg_purple_xdark  = ' guifg='.purple_xdark
+:let fg_purple_xdark  = ' guifg='.purple_xdark
 
 :let fg_blue_muted   = ' guifg='.blue_muted
 
-" :let red_xlight = '#ff73bf'
-" :let red_light  = '#ff4540'
-" :let red_med    = '#f73b36'
-" :let red_dark   = '#bf3330'
-" :let red_xdark  = '#a60400'
-" :let red_muted  = '#9f2f42'
 :let red_xlight = '#fa8380'
 :let red_light  = '#f75450'
 :let red_med    = '#f32620'
@@ -228,45 +222,40 @@ if &background == "dark"
   :exe "hi PmenuSel"               .bg_blue_xlight . fg_blue_xdark
   :exe "hi PmenuSbar"              .bg_blue_xdark . fg_gray100
 
-  :exe "hi EasyMotionTarget"       .bg_gray110 . fg_yellow_med
-  :exe "hi EasyMotionShade"        .bg_gray110 . fg_gray70
 else
   :exe 'hi Normal'                 .bg_gray10 . fg_gray80
-  :exe 'hi NonText'                .fg_gray80
+  :exe 'hi NonText'                .fg_gray40
   :exe 'hi Cursor'                 .bg_blue_med
-  :exe 'hi LineNR'                 .fg_gray50
-  :exe 'hi CursorLineNR'           .fg_gray60
+  :exe 'hi LineNR'                 .fg_gray60
+  :exe 'hi CursorLineNR'           .fg_gray90
   :exe 'hi CursorLine'             .bg_gray20
-  :exe 'hi CursorColumn'           .bg_gray90
-  :exe 'hi Comment'                .fg_gray80
-  :exe 'hi Visual'                 .bg_purple_xdark . fg_white
+  :exe 'hi CursorColumn'           .bg_gray30
+  :exe 'hi Comment'                .fg_gray60
+  :exe 'hi Visual'                 .bg_purple_xlight . fg_white
   :exe 'hi Search'                 .bg_yellow_med . fg_gray100
   :exe 'hi IncSearch'              .bg_yellow_med . fg_gray100
   :exe 'hi Constant'               .fg_blue_med
   :exe 'hi Todo'                   .bg_purple_med . fg_gray100
   :exe 'hi Directory'              .fg_white
   :exe 'hi Identifier'             .fg_red_med
-  :exe 'hi Statement'              .fg_gray30
+  :exe 'hi Statement'              .fg_gray90
   :exe "hi Special"                .fg_red_med
   :exe "hi Underlined"             .fg_blue_med
   :exe "hi Ignore"                 .fg_none . bg_none
   :exe "hi Error"                  .bg_red_med . fg_gray100
   :exe "hi VertSplit"              .bg_gray30 . fg_gray30 . gui_none
-  :exe "hi MatchParen"             .bg_blue_xdark . fg_blue_xlight
+  :exe "hi MatchParen"             .bg_blue_xlight . fg_blue_xdark
 
-  :exe "hi Pmenu"                  .bg_blue_xdark . fg_white
-  :exe "hi PmenuSel"               .bg_blue_xlight . fg_blue_xdark
-  :exe "hi PmenuSbar"              .bg_blue_xdark . fg_gray100
-
-  :exe "hi EasyMotionTarget"       .bg_gray10 . fg_red_med
-  :exe "hi EasyMotionShade"        .bg_gray10 . fg_gray40
+  :exe "hi Pmenu"                  .bg_blue_xlight . fg_white
+  :exe "hi PmenuSel"               .bg_blue_xdark . fg_blue_xlight
+  :exe "hi PmenuSbar"              .bg_blue_xlight . fg_gray20
 endif
 
 " Vim
 if &background == "dark"
   :exe 'hi vimLineComment'         .fg_gray60
 else
-  :exe 'hi vimLineComment'         .fg_gray50
+  :exe 'hi vimLineComment'         .fg_gray60
   :exe 'hi vimCommand'             .fg_gray70
 endif
 
@@ -287,22 +276,22 @@ if &background == "dark"
   :exe 'hi htmlH4'                 .fg_white
   :exe 'hi htmlH5'                 .fg_white
 else
-  :exe 'hi htmlTag'                .fg_blue_light
-  :exe 'hi htmlEndTag'             .fg_blue_light
-  :exe 'hi htmlTagName'            .fg_blue_med
-  :exe 'hi htmlTagN'               .fg_blue_med
+  :exe 'hi htmlTag'                .fg_blue_med
+  :exe 'hi htmlEndTag'             .fg_blue_med
+  :exe 'hi htmlTagName'            .fg_blue_xdark
+  :exe 'hi htmlTagN'               .fg_blue_xdark
   :exe 'hi htmlString'             .fg_blue_xdark
-  :exe 'hi htmlArg'                .fg_blue_light
-  :exe 'hi htmlTitle'              .fg_black . gui_bold
-  :exe 'hi htmlBold'               .fg_gray80 . gui_bold
+  :exe 'hi htmlArg'                .fg_blue_med
+  :exe 'hi htmlTitle'              .fg_gray110 . gui_bold
+  :exe 'hi htmlBold'               .fg_gray90 . gui_bold
   :exe 'hi htmlItalic'             .gui_italic
   :exe 'hi htmlH1'                 .fg_gray80 . gui_bold
-  :exe 'hi htmlH2'                 .fg_gray80
-  :exe 'hi htmlH3'                 .fg_gray80
-  :exe 'hi htmlH4'                 .fg_gray80
-  :exe 'hi htmlH5'                 .fg_gray80
-  :exe 'hi htmlComment'            .fg_gray50
-  :exe 'hi htmlCommentPart'        .fg_gray50
+  :exe 'hi htmlH2'                 .fg_gray110
+  :exe 'hi htmlH3'                 .fg_gray110
+  :exe 'hi htmlH4'                 .fg_gray110
+  :exe 'hi htmlH5'                 .fg_gray110
+  :exe 'hi htmlComment'            .fg_gray60
+  :exe 'hi htmlCommentPart'        .fg_gray60
 endif
 
 " CSS
@@ -347,6 +336,7 @@ if &background == "dark"
   :exe 'hi cssValueNumber'         .fg_gray30
   :exe 'hi cssPseudoClass'         .fg_purple_xlight
   :exe 'hi sassProperty'           .fg_red_dark
+  :exe 'hi sassComment'            .fg_gray60
   :exe 'hi sassMixing'             .fg_red_dark
   :exe 'hi sassMixinName'          .fg_red_light
   :exe 'hi sassInclude'            .fg_red_dark
@@ -389,6 +379,7 @@ else
   :exe 'hi cssURL'                 .fg_gray90
   :exe 'hi cssColor'               .fg_gray90
   :exe 'hi cssClassName'           .fg_purple_xdark . gui_bold
+  :exe 'hi cssClassNameDot'        .fg_purple_med
   :exe 'hi cssImportant'           .fg_purple_med  . gui_bold
   :exe 'hi cssStringQQ'            .fg_purple_xdark
   :exe 'hi cssValueLength'         .fg_gray90
@@ -398,7 +389,7 @@ else
   :exe 'hi cssValueNumber'         .fg_gray90
   :exe 'hi cssPseudoClass'         .fg_purple_xdark
   :exe 'hi sassProperty'           .fg_red_light
-  :exe 'hi sassComment'            .fg_gray50
+  :exe 'hi sassComment'            .fg_gray60
   :exe 'hi sassMixing'             .fg_red_light
   :exe 'hi sassMixinName'          .fg_red_dark
   :exe 'hi sassInclude'            .fg_red_light
@@ -417,10 +408,15 @@ if &background == "dark"
   :exe 'hi erubyDelimiter'         .fg_red_xdark
   :exe 'hi erubyBlock'             .fg_red_light
   :exe 'hi erubyExpression'        .fg_red_med
+  :exe 'hi rubyException'          .fg_red_med . gui_bold
   :exe 'hi rubyInclude'            .fg_red_med
   :exe 'hi rubyString'             .fg_red_xlight
+  :exe 'hi rubyAccess'             .fg_red_xlight . gui_bold
   :exe 'hi rubyConstant'           .fg_white . gui_bold
+  :exe 'hi rubyConditional'        .fg_white
   :exe 'hi rubyClass'              .fg_red_med
+  :exe 'hi rubyComment'            .fg_gray60
+  :exe 'hi rubyControl'            .fg_red_xlight
   :exe 'hi rubyModule'             .fg_red_med
   :exe 'hi rubyDefine'             .fg_red_dark
   :exe 'hi rubySymbol'             .fg_red_xlight
@@ -442,19 +438,19 @@ else
   :exe 'hi rubyInclude'            .fg_red_med
   :exe 'hi rubyString'             .fg_red_xdark
   :exe 'hi rubyAccess'             .fg_red_xdark . gui_bold
-  :exe 'hi rubyConstant'           .fg_black . gui_bold
+  :exe 'hi rubyConstant'           .fg_gray110 . gui_bold
   :exe 'hi rubyConditional'        .fg_black
   :exe 'hi rubyClass'              .fg_red_med
-  :exe 'hi rubyComment'            .fg_gray50
+  :exe 'hi rubyComment'            .fg_gray60
   :exe 'hi rubyControl'            .fg_red_xdark
   :exe 'hi rubyModule'             .fg_red_med
   :exe 'hi rubyDefine'             .fg_red_light
   :exe 'hi rubySymbol'             .fg_red_xdark
   :exe 'hi rubyInteger'            .fg_red_xdark
   :exe 'hi rubyFloat'              .fg_red_xdark
-  :exe 'hi rubyFunction'           .fg_black . gui_bold
+  :exe 'hi rubyFunction'           .fg_gray110 . gui_bold
   :exe 'hi rubyBoolean'            .fg_red_xdark
-  :exe 'hi rubyTodo'               .fg_white . bg_purple_med
+  :exe 'hi rubyTodo'               .fg_white . bg_red_med
   :exe 'hi rubyPseudoVariable'     .fg_red_dark
   :exe 'hi rubyStringDelimiter'    .fg_red_light
   :exe 'hi rubyArrayDelimiter'     .fg_red_xlight
@@ -486,8 +482,8 @@ if &background == "dark"
   :exe 'hi coffeeSpecialVar'       .fg_brown_light
   :exe 'hi coffeeSpecialIdent'     .fg_brown_light
 else
-  :exe 'hi coffeeGlobal'           .fg_black . gui_bold
-  :exe 'hi coffeeInterpDelim'      .fg_black . gui_bold
+  :exe 'hi coffeeGlobal'           .fg_gray110 . gui_bold
+  :exe 'hi coffeeInterpDelim'      .fg_gray110 . gui_bold
   :exe 'hi coffeeExtendedOp'       .fg_brown_dark
   :exe 'hi coffeeParen'            .fg_brown_light
   :exe 'hi coffeeBracket'          .fg_brown_light
@@ -507,7 +503,7 @@ else
   :exe 'hi coffeeBoolean'          .fg_brown_dark
   :exe 'hi coffeeSpecialVar'       .fg_brown_dark
   :exe 'hi coffeeSpecialIdent'     .fg_brown_dark
-  :exe 'hi coffeeComment'          .fg_gray50
+  :exe 'hi coffeeComment'          .fg_gray60
 endif
 
 " Javascript
