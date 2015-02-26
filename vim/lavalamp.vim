@@ -255,8 +255,8 @@ if &background == "dark"
   :exe 'hi vimOption'              .fg_green_light . gui_bold
   :exe 'hi vimEnvvar'              .fg_purple_med
   :exe 'hi vimAutoEvent'           .fg_green_light
-  :exe 'hi vimString'              .fg_green_med
-  :exe 'hi vimVar'                 .fg_green_xlight
+  :exe 'hi vimString'              .fg_green_xlight
+  :exe 'hi vimVar'                 .fg_green_dark
   :exe 'hi vimFuncName'            .fg_gray20 . gui_bold
   :exe 'hi vimParenSep'            .fg_gray20
   :exe 'hi vimSep'                 .fg_gray20
@@ -272,8 +272,8 @@ else
   :exe 'hi vimOption'              .fg_green_dark . gui_bold
   :exe 'hi vimEnvvar'              .fg_purple_med
   :exe 'hi vimAutoEvent'           .fg_green_dark
-  :exe 'hi vimString'              .fg_green_med
-  :exe 'hi vimVar'                 .fg_green_xdark
+  :exe 'hi vimString'              .fg_green_xdark
+  :exe 'hi vimVar'                 .fg_green_med
   :exe 'hi vimFuncName'            .fg_gray100 . gui_bold
   :exe 'hi vimParenSep'            .fg_gray100
   :exe 'hi vimSep'                 .fg_gray100
