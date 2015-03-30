@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lavalamp by jasonlong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Lavalamp</h1>
+      <h2 class="project-tagline">A text editor theme that visually differentiates languages.</h2>
+      <a href="https://github.com/jasonlong/lavalamp" class="btn">View on GitHub</a>
+      <a href="https://github.com/jasonlong/lavalamp/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/jasonlong/lavalamp/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <p><img src="http://cl.ly/image/320J0E0d2p3W/content" alt=""></p>
+
+<h3>
+<a id="lavalamp-is-a-wip-text-editor-theme" class="anchor" href="#lavalamp-is-a-wip-text-editor-theme" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lavalamp is a WIP text editor theme.</h3>
+
+<p><strong>It currently works in Vim, but I hope to port it to Atom and Sublime Text.</strong></p>
+
+<h1></h1>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<p>Copy <code>lavalamp.vim</code> to your <code>.vim/colors</code> directory.</p>
+
+<pre><code>$ cd lavalamp/vim
+$ cp lavalamp.vim ~/.vim/colors/
+</code></pre>
+
+<p>Then update your <code>.vimrc</code> with these lines:</p>
+
+<pre><code>syntax enable
+set background=dark
+colorscheme lavalamp
+</code></pre>
+
+<p>If you're using <a href="https://github.com/bling/vim-airline">airline</a>, you can install the lavalamp theme for that.</p>
+
+<pre><code>$ cd lavalamp/vim/autoload/airline/themes
+$ cp lavalamp.vim ~/.vim/autoload/airline/themes/
+</code></pre>
+
+<p>For the iTerm theme, you should be able to double-click on the <code>lavalamp/iterm/lavalamp.itermcolors</code> file to install it.</p>
+
+<p><strong>If you're using CoffeeScript, I highly recommend installing the <a href="https://github.com/kchmck/vim-coffee-script">vim-coffee-script</a> plugin since it offers much better syntax highlighting (which lavalamp utilizes).</strong></p>
+
+<p>For xterm, you should copy the contents of <code>xterm/Xresources</code> to your <code>~/.Xresources</code>.</p>
+
+<h4>
+<a id="terminal-vim" class="anchor" href="#terminal-vim" aria-hidden="true"><span class="octicon octicon-link"></span></a>Terminal Vim</h4>
+
+<p>If you're running Vim in a terminal (as opposed to MacVim, etc.) this colorscheme won't work by default. You can use the <a href="http://www.vim.org/scripts/script.php?script_id=2390">CSApprox</a> plugin to get it working though. You also may need to add this line to your <code>.vimrc</code>:</p>
+
+<pre><code>set t_Co=256
+</code></pre>
+
+<h3>
+<a id="design-principles" class="anchor" href="#design-principles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Design principles</h3>
+
+<p>The idea behind the theme is that each language has its own core color. This way, it's easier to visually differentiate languages when they're used together.</p>
+
+<p>For example, HTML uses shades of blue while Ruby uses red. Then it's easy to see your ERB tags:</p>
+
+<p><img src="http://cl.ly/image/3X091e0c3U11/content" alt=""></p>
+
+<p>CSS uses purple (an homage to <a href="https://github.com/mdo">@mdo</a>):</p>
+
+<p><img src="http://cl.ly/image/0W223O123E1t/content" alt=""></p>
+
+<p>In a Sass file, it's easy to see vanilla CSS vs. Sass (which is red, since it's Ruby):</p>
+
+<p><img src="http://cl.ly/image/10100y1Q3g25/content" alt=""></p>
+
+<p>I've chosen green for Javascript:</p>
+
+<p><img src="http://cl.ly/image/1d3H3Q3V0j0p/content" alt=""></p>
+
+<p>And browns for Coffeescript:</p>
+
+<p><img src="http://cl.ly/image/3x0k3Q262g0m/content" alt=""></p>
+
+<p>The iTerm and Terminal themes look like so:</p>
+
+<p><img src="http://cl.ly/image/0y0Q1N2O1D0A/content" alt=""></p>
+
+<h3>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h3>
+
+<ol>
+<li>Fork it ( <a href="http://github.com/jasonlong/lavalamp/fork">http://github.com/jasonlong/lavalamp/fork</a> )</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol>
+
+<p>If you'd like to add support for addtional languages, you'll need to add new entries for each syntax scope. I have found <a href="https://github.com/gerw/vim-HiLinkTrace">vim-HiLinkTrace</a> to be very handy for figuring out what a given scope a character is in. Once you've installed that (via Vundle, NeoBundle, etc.), you can add a keyboard shortcut to your <code>.vimrc</code>. This is what I use:</p>
+
+<pre><code>nmap &lt;leader&gt;h :HLT&lt;CR&gt;
+</code></pre>
+
+<p>Then, when your cursor is over a character you want to know about, hit <code>&lt;leader&gt;h</code> and the syntax scope will be shown at the bottom of your Vim window. Create a new line with this in <code>lavalamp.vim</code>.</p>
+
+<h3>
+<a id="roadmap" class="anchor" href="#roadmap" aria-hidden="true"><span class="octicon octicon-link"></span></a>Roadmap</h3>
+
+<p>I've been using this theme for a while in this state since these are the languages I mostly use. If more people want to use the theme, more languages will need to be fleshed out.</p>
+
+<p>And I'd really <img class="emoji" title=":heart:" alt=":heart:" src="/images/icons/emoji/unicode/2764.png" height="20" width="20" align="absmiddle"> some help getting this working with Atom and Sublime as similarly as possible.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/jasonlong/lavalamp">Lavalamp</a> is maintained by <a href="https://github.com/jasonlong">jasonlong</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
