@@ -222,6 +222,10 @@ if &background == "dark"
   :exe "hi Pmenu"                  .bg_blue_xdark . fg_white
   :exe "hi PmenuSel"               .bg_blue_xlight . fg_blue_xdark
   :exe "hi PmenuSbar"              .bg_blue_xdark . fg_gray100
+
+  :exe "hi SneakPluginTarget"      .bg_purple_med . fg_white
+  :exe "hi SneakStreakTarget"      .bg_purple_med . fg_white
+  :exe "hi SneakStreakMask"        .bg_purple_light
 else
   :exe 'hi Normal'                 .bg_gray10 . fg_gray70
   :exe 'hi NonText'                .fg_gray40
@@ -253,6 +257,10 @@ else
   :exe "hi Pmenu"                  .bg_blue_xlight . fg_white
   :exe "hi PmenuSel"               .bg_blue_xdark . fg_blue_xlight
   :exe "hi PmenuSbar"              .bg_blue_xlight . fg_gray20
+
+  :exe "hi SneakPluginTarget"      .bg_purple_med . fg_white
+  :exe "hi SneakStreakTarget"      .bg_purple_med . fg_white
+  :exe "hi SneakStreakMask"        .bg_purple_light
 endif
 
 " Vim
