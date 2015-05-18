@@ -145,6 +145,12 @@ let g:colors_name = "lavalamp"
 :let fg_orange_dark   = ' guifg='.orange_dark
 :let fg_orange_xdark  = ' guifg='.orange_xdark
 
+:let bg_orange_xlight = ' guibg='.orange_xlight
+:let bg_orange_light  = ' guibg='.orange_light
+:let bg_orange_med    = ' guibg='.orange_med
+:let bg_orange_dark   = ' guibg='.orange_dark
+:let bg_orange_xdark  = ' guibg='.orange_xdark
+
 :let fg_yellow_xlight     = ' guifg='.yellow_xlight
 :let fg_yellow_light      = ' guifg='.yellow_light
 :let fg_yellow_med        = ' guifg='.yellow_med
@@ -226,6 +232,9 @@ if &background == "dark"
   :exe "hi SneakPluginTarget"      .bg_purple_med . fg_white
   :exe "hi SneakStreakTarget"      .bg_purple_med . fg_white
   :exe "hi SneakStreakMask"        .bg_purple_light
+
+  :exe "hi SyntasticErrorSign"     .bg_red_med . fg_white
+  :exe "hi SyntasticWarningSign"   .bg_orange_med . fg_white
 else
   :exe 'hi Normal'                 .bg_gray10 . fg_gray70
   :exe 'hi NonText'                .fg_gray40
@@ -261,6 +270,9 @@ else
   :exe "hi SneakPluginTarget"      .bg_purple_med . fg_white
   :exe "hi SneakStreakTarget"      .bg_purple_med . fg_white
   :exe "hi SneakStreakMask"        .bg_purple_light
+
+  :exe "hi SyntasticErrorSign"     .bg_red_med . fg_white
+  :exe "hi SyntasticWarningSign"   .bg_orange_med . fg_white
 endif
 
 " Vim
