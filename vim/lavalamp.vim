@@ -234,8 +234,8 @@ if &background == "dark"
   :exe "hi SneakStreakTarget"      .bg_purple_med . fg_white
   :exe "hi SneakStreakMask"        .bg_purple_light
 
-  :exe "hi SyntasticErrorSign"     .bg_red_med . fg_white
-  :exe "hi SyntasticWarningSign"   .bg_orange_med . fg_white
+  :exe "hi SyntasticErrorSign"     .bg_red_med . fg_white . gui_bold
+  :exe "hi SyntasticWarningSign"   .bg_yellow_med . fg_gray90 . gui_bold
 else
   :exe 'hi Normal'                 .bg_gray10 . fg_gray70
   :exe 'hi NonText'                .fg_gray40
@@ -273,8 +273,8 @@ else
   :exe "hi SneakStreakTarget"      .bg_purple_med . fg_white
   :exe "hi SneakStreakMask"        .bg_purple_light
 
-  :exe "hi SyntasticErrorSign"     .bg_red_med . fg_white
-  :exe "hi SyntasticWarningSign"   .bg_orange_med . fg_white
+  :exe "hi SyntasticErrorSign"     .bg_red_med . fg_white . gui_bold
+  :exe "hi SyntasticWarningSign"   .bg_yellow_med . fg_gray90 . gui_bold
 endif
 
 " Vim
@@ -879,7 +879,6 @@ endif
 " exe "hi DiffChange"     . s:fg_yellow .s:bg_none   .s:fmt_revr
 " exe "hi DiffDelete"     . s:fg_red    .s:bg_none   .s:fmt_revr
 " exe "hi DiffText"       . s:fg_blue   .s:bg_none   .s:fmt_revr
-" exe "hi SignColumn"     . s:fg_base0  .s:bg_base02 .s:fmt_none
 " exe "hi Conceal"        . s:fg_blue   .s:bg_none   .s:fmt_none
 " exe "hi SpellBad"       . s:fg_none   .s:bg_none   .s:fmt_curl   .s:sp_red
 " exe "hi SpellCap"       . s:fg_none   .s:bg_none   .s:fmt_curl   .s:sp_violet
