@@ -219,6 +219,7 @@ if &background == "dark"
   :exe "hi Ignore"                 .fg_none . bg_none
   :exe "hi Error"                  .bg_red_med . fg_gray100
   :exe "hi VertSplit"              .bg_gray90 . fg_gray90 . gui_none
+  :exe "hi SignColumn"             .bg_gray100
   :exe "hi MatchParen"             .bg_blue_xdark . fg_blue_xlight
   :exe "hi Title"                  .fg_blue_xlight
   :exe "hi Number"                 .fg_blue_xlight
@@ -257,6 +258,7 @@ else
   :exe "hi Ignore"                 .fg_none . bg_none
   :exe "hi Error"                  .bg_red_med . fg_gray100
   :exe "hi VertSplit"              .bg_gray30 . fg_gray30 . gui_none
+  :exe "hi SignColumn"             .bg_gray30
   :exe "hi MatchParen"             .bg_blue_xlight . fg_blue_xdark
   :exe "hi Title"                  .fg_blue_xdark
   :exe "hi Number"                 .fg_blue_xdark
