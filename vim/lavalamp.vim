@@ -210,7 +210,7 @@ if &background == "dark"
   :exe 'hi Search'                 .bg_yellow_med . fg_gray100
   :exe 'hi IncSearch'              .bg_yellow_med . fg_gray100
   :exe 'hi Constant'               .fg_blue_med
-  :exe 'hi Todo'                   .bg_purple_med . fg_gray100
+  :exe 'hi Todo'                   .bg_red_med . fg_white
   :exe 'hi Directory'              .fg_white
   :exe 'hi Identifier'             .fg_red_med
   :exe 'hi Statement'              .fg_gray30
@@ -218,13 +218,14 @@ if &background == "dark"
   :exe "hi Underlined"             .fg_blue_med
   :exe "hi Ignore"                 .fg_none . bg_none
   :exe "hi Error"                  .bg_red_med . fg_gray100
-  :exe "hi VertSplit"              .bg_gray90 . fg_gray90 . gui_none
+  :exe "hi VertSplit"              .bg_gray70 . fg_gray70 . gui_none
   :exe "hi SignColumn"             .bg_gray100
   :exe "hi MatchParen"             .bg_blue_xdark . fg_blue_xlight
   :exe "hi Title"                  .fg_blue_xlight
   :exe "hi Number"                 .fg_blue_xlight
-  :exe "hi StatusLine"             .bg_gray90 . fg_gray20 . gui_none
-  :exe "hi StatusLineNC"           .bg_gray100 . fg_gray50 . gui_none
+  :exe "hi Folded"                 .bg_gray100 . fg_gray60
+  :exe "hi StatusLine"             .bg_blue_med . fg_white . gui_none
+  :exe "hi StatusLineNC"           .bg_gray70 . fg_gray30 . gui_none
 
   :exe "hi Pmenu"                  .bg_blue_xdark . fg_white
   :exe "hi PmenuSel"               .bg_blue_xlight . fg_blue_xdark
@@ -249,7 +250,7 @@ else
   :exe 'hi Search'                 .bg_yellow_med . fg_gray100
   :exe 'hi IncSearch'              .bg_yellow_med . fg_gray100
   :exe 'hi Constant'               .fg_blue_med
-  :exe 'hi Todo'                   .bg_purple_med . fg_gray100
+  :exe 'hi Todo'                   .bg_red_med . fg_white
   :exe 'hi Directory'              .fg_black
   :exe 'hi Identifier'             .fg_red_med
   :exe 'hi Statement'              .fg_gray90
@@ -262,8 +263,9 @@ else
   :exe "hi MatchParen"             .bg_blue_xlight . fg_blue_xdark
   :exe "hi Title"                  .fg_blue_xdark
   :exe "hi Number"                 .fg_blue_xdark
-  :exe "hi StatusLine"             .bg_gray60 . fg_gray20 . gui_none
-  :exe "hi StatusLineNC"           .bg_gray30 . fg_gray60 . gui_none
+  :exe "hi Folded"                 .bg_gray20 . fg_gray60
+  :exe "hi StatusLine"             .bg_blue_med . fg_white . gui_none
+  :exe "hi StatusLineNC"           .bg_gray30 . fg_gray70 . gui_none
 
   :exe "hi Pmenu"                  .bg_blue_xlight . fg_white
   :exe "hi PmenuSel"               .bg_blue_xdark . fg_blue_xlight
@@ -481,7 +483,7 @@ if &background == "dark"
   :exe 'hi rubyFloat'              .fg_red_xlight
   :exe 'hi rubyFunction'           .fg_white . gui_bold
   :exe 'hi rubyBoolean'            .fg_red_xlight
-  :exe 'hi rubyTodo'               .fg_white . bg_gray110
+  :exe 'hi rubyTodo'               .fg_white . bg_red_med
   :exe 'hi rubyPseudoVariable'     .fg_red_light
   :exe 'hi rubyStringDelimiter'    .fg_red_dark
   :exe 'hi rubyArrayDelimiter'     .fg_red_xdark
@@ -507,7 +509,7 @@ else
   :exe 'hi rubyFloat'              .fg_red_xdark
   :exe 'hi rubyFunction'           .fg_gray110 . gui_bold
   :exe 'hi rubyBoolean'            .fg_red_xdark
-  :exe 'hi rubyTodo'               .fg_red_xdark . bg_white
+  :exe 'hi rubyTodo'               .fg_white . bg_red_med
   :exe 'hi rubyPseudoVariable'     .fg_red_dark
   :exe 'hi rubyStringDelimiter'    .fg_red_light
   :exe 'hi rubyArrayDelimiter'     .fg_red_xlight
