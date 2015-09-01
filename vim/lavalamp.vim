@@ -92,12 +92,14 @@ let g:colors_name = "lavalamp"
 
 :let fg_blue_xdark   = ' guifg='.blue_xdark
 
-:let red_xlight = '#fa8380'
-:let red_light  = '#f75450'
-:let red_med    = '#f32620'
-:let red_dark   = '#d4110c'
-:let red_xdark  = '#a30e0a'
-:let red_muted  = '#9f2f42'
+:let red_xlight     = '#fa8380'
+:let red_light      = '#f75450'
+:let red_med        = '#f32620'
+:let red_dark       = '#d4110c'
+:let red_xdark      = '#a30e0a'
+:let red_muted      = '#9f2f42'
+:let red_diff_light = '#ffecec'
+:let red_diff_dark  = '#510705'
 
 :let orange_xlight = '#fddec3'
 :let orange_light  = '#fdbc85'
@@ -113,11 +115,13 @@ let g:colors_name = "lavalamp"
 :let yellow_xdark       = '#9d9310'
 :let yellow_muted       = '#ede275'
 
-:let green_xlight = '#4fd860'
-:let green_light  = '#2ECC40'
-:let green_med    = '#06c41d'
-:let green_dark   = '#009513'
-:let green_xdark  = '#00790f'
+:let green_xlight     = '#4fd860'
+:let green_light      = '#2ECC40'
+:let green_med        = '#06c41d'
+:let green_dark       = '#009513'
+:let green_xdark      = '#00790f'
+:let green_diff_light = '#eaffea'
+:let green_diff_dark  = '#004108'
 
 :let brown_xlight = '#d4ad83'
 :let brown_light  = '#d49f66'
@@ -132,12 +136,14 @@ let g:colors_name = "lavalamp"
 :let fg_red_xdark  = ' guifg='.red_xdark
 :let fg_red_muted  = ' guifg='.red_muted
 
-:let bg_red_xlight = ' guibg='.red_xlight
-:let bg_red_light  = ' guibg='.red_light
-:let bg_red_med    = ' guibg='.red_med
-:let bg_red_dark   = ' guibg='.red_dark
-:let bg_red_xdark  = ' guibg='.red_xdark
-:let bg_red_muted  = ' guibg='.red_muted
+:let bg_red_xlight     = ' guibg='.red_xlight
+:let bg_red_light      = ' guibg='.red_light
+:let bg_red_med        = ' guibg='.red_med
+:let bg_red_dark       = ' guibg='.red_dark
+:let bg_red_xdark      = ' guibg='.red_xdark
+:let bg_red_muted      = ' guibg='.red_muted
+:let bg_red_diff_light = ' guibg='.red_diff_light
+:let bg_red_diff_dark  = ' guibg='.red_diff_dark
 
 :let fg_orange_xlight = ' guifg='.orange_xlight
 :let fg_orange_light  = ' guifg='.orange_light
@@ -173,11 +179,13 @@ let g:colors_name = "lavalamp"
 :let fg_green_dark   = ' guifg='.green_dark
 :let fg_green_xdark  = ' guifg='.green_xdark
 
-:let bg_green_xlight = ' guibg='.green_xlight
-:let bg_green_light  = ' guibg='.green_light
-:let bg_green_med    = ' guibg='.green_med
-:let bg_green_dark   = ' guibg='.green_dark
-:let bg_green_xdark  = ' guibg='.green_xdark
+:let bg_green_xlight     = ' guibg='.green_xlight
+:let bg_green_light      = ' guibg='.green_light
+:let bg_green_med        = ' guibg='.green_med
+:let bg_green_dark       = ' guibg='.green_dark
+:let bg_green_xdark      = ' guibg='.green_xdark
+:let bg_green_diff_light = ' guibg='.green_diff_light
+:let bg_green_diff_dark  = ' guibg='.green_diff_dark
 
 :let fg_brown_xlight = ' guifg='.brown_xlight
 :let fg_brown_light  = ' guifg='.brown_light
@@ -226,6 +234,12 @@ if &background == "dark"
   :exe "hi Folded"                 .bg_gray100 . fg_gray60
   :exe "hi StatusLine"             .bg_blue_med . fg_white . gui_none
   :exe "hi StatusLineNC"           .bg_gray70 . fg_gray30 . gui_none
+  :exe "hi DiffAdd"                .bg_green_diff_dark
+  :exe "hi DiffChange"             .bg_yellow_xlight
+  :exe "hi DiffDelete"             .bg_red_diff_dark . fg_red_xdark
+  :exe "hi DiffText"               .bg_green_xlight
+  :exe 'hi PreProc'                .fg_gray60
+  :exe 'hi Delimiter'              . fg_gray70
 
   :exe "hi Pmenu"                  .bg_blue_xdark . fg_white
   :exe "hi PmenuSel"               .bg_blue_xlight . fg_blue_xdark
@@ -235,8 +249,8 @@ if &background == "dark"
   :exe "hi SneakStreakTarget"      .bg_purple_med . fg_white
   :exe "hi SneakStreakMask"        .bg_purple_light
 
-  :exe "hi SyntasticErrorSign"     .bg_red_med . fg_white . gui_bold
-  :exe "hi SyntasticWarningSign"   .bg_yellow_med . fg_gray90 . gui_bold
+  :exe "hi SyntasticErrorSign"     .bg_gray100 . fg_red_med . gui_bold
+  :exe "hi SyntasticWarningSign"   .bg_gray100 . fg_yellow_med . gui_bold
 else
   :exe 'hi Normal'                 .bg_gray10 . fg_gray70
   :exe 'hi NonText'                .fg_gray40
@@ -259,13 +273,19 @@ else
   :exe "hi Ignore"                 .fg_none . bg_none
   :exe "hi Error"                  .bg_red_med . fg_gray100
   :exe "hi VertSplit"              .bg_gray30 . fg_gray30 . gui_none
-  :exe "hi SignColumn"             .bg_gray30
+  :exe "hi SignColumn"             .bg_gray20
   :exe "hi MatchParen"             .bg_blue_xlight . fg_blue_xdark
   :exe "hi Title"                  .fg_blue_xdark
   :exe "hi Number"                 .fg_blue_xdark
   :exe "hi Folded"                 .bg_gray20 . fg_gray60
   :exe "hi StatusLine"             .bg_blue_med . fg_white . gui_none
   :exe "hi StatusLineNC"           .bg_gray30 . fg_gray70 . gui_none
+  :exe "hi DiffAdd"                .bg_green_diff_light
+  :exe "hi DiffChange"             .bg_yellow_xlight
+  :exe "hi DiffDelete"             .bg_red_diff_light . fg_red_light
+  :exe "hi DiffText"               .bg_green_xlight
+  :exe 'hi PreProc'                .fg_gray50
+  :exe 'hi Delimiter'              .fg_gray40
 
   :exe "hi Pmenu"                  .bg_blue_xlight . fg_white
   :exe "hi PmenuSel"               .bg_blue_xdark . fg_blue_xlight
@@ -276,7 +296,7 @@ else
   :exe "hi SneakStreakMask"        .bg_purple_light
 
   :exe "hi SyntasticErrorSign"     .bg_red_med . fg_white . gui_bold
-  :exe "hi SyntasticWarningSign"   .bg_yellow_med . fg_gray90 . gui_bold
+  :exe "hi SyntasticWarningSign"   .bg_yellow_med . fg_gray70 . gui_bold
 endif
 
 " Vim
