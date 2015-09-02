@@ -341,6 +341,7 @@ if &background == "dark"
   :exe 'hi htmlTag'                .fg_blue_xdark
   :exe 'hi htmlEndTag'             .fg_blue_xdark
   :exe 'hi htmlTagName'            .fg_blue_med
+  :exe 'hi htmlSpecialTagName'     .fg_blue_med
   :exe 'hi htmlTagN'               .fg_blue_med
   :exe 'hi htmlString'             .fg_blue_xlight
   :exe 'hi htmlArg'                .fg_blue_dark
@@ -357,6 +358,7 @@ else
   :exe 'hi htmlTag'                .fg_blue_xlight
   :exe 'hi htmlEndTag'             .fg_blue_xlight
   :exe 'hi htmlTagName'            .fg_blue_xdark
+  :exe 'hi htmlSpecialTagName'     .fg_blue_xdark
   :exe 'hi htmlTagN'               .fg_blue_xdark
   :exe 'hi htmlString'             .fg_blue_xdark
   :exe 'hi htmlArg'                .fg_blue_med
