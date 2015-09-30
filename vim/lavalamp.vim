@@ -827,6 +827,27 @@ if &background == "dark"
   :exe 'hi markdownUrl'                .fg_blue_light
   :exe 'hi markdownIdDeclaration'      .fg_red_med
   :exe 'hi markdownRule'               .fg_gray70
+else
+  :exe 'hi markdownHeadingRule'        .fg_red_med
+  :exe 'hi markdownBlockQuote'         .fg_gray50
+  :exe 'hi markdownBold'               .fg_gray70 . gui_bold
+  :exe 'hi markdownCode'               .fg_black . bg_gray40
+  :exe 'hi markdownCodeBlock'          .fg_black . bg_gray40
+  :exe 'hi markdownHeadingDelimiter'   .fg_gray60
+  :exe 'hi markdownH1'                 .fg_black . gui_bold
+  :exe 'hi markdownH2'                 .fg_black
+  :exe 'hi markdownH3'                 .fg_black
+  :exe 'hi markdownH4'                 .fg_black
+  :exe 'hi markdownH5'                 .fg_black
+  :exe 'hi markdownItalic'             .fg_black
+  :exe 'hi markdownBold'               .fg_black
+  :exe 'hi markdownCodeDelimiter'      .fg_blue_med
+  :exe 'hi markdownListMarker'         .fg_blue_med
+  :exe 'hi markdownOrderedListMarker'  .fg_blue_med
+  :exe 'hi markdownLinkText'           .fg_blue_med
+  :exe 'hi markdownUrl'                .fg_blue_dark
+  :exe 'hi markdownIdDeclaration'      .fg_red_med
+  :exe 'hi markdownRule'               .fg_gray50
 endif
 
 " Python
