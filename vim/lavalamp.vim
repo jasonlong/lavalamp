@@ -831,8 +831,8 @@ else
   :exe 'hi markdownHeadingRule'        .fg_red_med
   :exe 'hi markdownBlockQuote'         .fg_gray50
   :exe 'hi markdownBold'               .fg_gray70 . gui_bold
-  :exe 'hi markdownCode'               .fg_black . bg_gray40
-  :exe 'hi markdownCodeBlock'          .fg_black . bg_gray40
+  :exe 'hi markdownCode'               .fg_black . bg_gray20
+  :exe 'hi markdownCodeBlock'          .fg_black . bg_gray20
   :exe 'hi markdownHeadingDelimiter'   .fg_gray60
   :exe 'hi markdownH1'                 .fg_black . gui_bold
   :exe 'hi markdownH2'                 .fg_black
