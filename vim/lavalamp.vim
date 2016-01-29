@@ -251,6 +251,12 @@ if &background == "dark"
 
   :exe "hi SyntasticErrorSign"     .bg_gray100 . fg_red_med . gui_bold
   :exe "hi SyntasticWarningSign"   .bg_gray100 . fg_yellow_med . gui_bold
+
+  :exe "hi SignColumn"             .bg_gray110
+  :exe "hi GitGutterAdd"           .fg_green_light
+  :exe "hi GitGutterDelete"        .fg_red_dark . gui_bold
+  :exe "hi GitGutterChange"        .fg_orange_med . gui_bold
+  :exe "hi GitGutterChangeDelete"  .fg_orange_med . gui_bold
 else
   :exe 'hi Normal'                 .bg_gray10 . fg_gray70
   :exe 'hi NonText'                .fg_gray40
@@ -297,6 +303,12 @@ else
 
   :exe "hi SyntasticErrorSign"     .bg_red_med . fg_white . gui_bold
   :exe "hi SyntasticWarningSign"   .bg_yellow_med . fg_gray70 . gui_bold
+
+  :exe "hi SignColumn"             .bg_gray10
+  :exe "hi GitGutterAdd"           .fg_green_dark
+  :exe "hi GitGutterDelete"        .fg_red_dark . gui_bold
+  :exe "hi GitGutterChange"        .fg_orange_med . gui_bold
+  :exe "hi GitGutterChangeDelete"   .fg_orange_med . gui_bold
 endif
 
 " Vim
