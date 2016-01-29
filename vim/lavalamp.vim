@@ -255,8 +255,8 @@ if &background == "dark"
   :exe "hi SignColumn"             .bg_gray110
   :exe "hi GitGutterAdd"           .fg_green_light
   :exe "hi GitGutterDelete"        .fg_red_dark . gui_bold
-  :exe "hi GitGutterChange"        .fg_orange_med . gui_bold
-  :exe "hi GitGutterChangeDelete"  .fg_orange_med . gui_bold
+  :exe "hi GitGutterChange"        .fg_purple_light . gui_bold
+  :exe "hi GitGutterChangeDelete"  .fg_purple_light . gui_bold
 else
   :exe 'hi Normal'                 .bg_gray10 . fg_gray70
   :exe 'hi NonText'                .fg_gray40
@@ -307,8 +307,8 @@ else
   :exe "hi SignColumn"             .bg_gray10
   :exe "hi GitGutterAdd"           .fg_green_dark
   :exe "hi GitGutterDelete"        .fg_red_dark . gui_bold
-  :exe "hi GitGutterChange"        .fg_orange_med . gui_bold
-  :exe "hi GitGutterChangeDelete"   .fg_orange_med . gui_bold
+  :exe "hi GitGutterChange"        .fg_purple_med . gui_bold
+  :exe "hi GitGutterChangeDelete"  .fg_purple_med . gui_bold
 endif
 
 " Vim
