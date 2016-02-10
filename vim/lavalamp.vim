@@ -215,8 +215,8 @@ if &background == "dark"
   :exe 'hi CursorColumn'           .bg_gray90
   :exe 'hi Comment'                .fg_gray60
   :exe 'hi Visual'                 .bg_purple_xdark . fg_white
-  :exe 'hi Search'                 .bg_yellow_med . fg_gray100
-  :exe 'hi IncSearch'              .bg_yellow_med . fg_gray100
+  :exe 'hi Search'                 .bg_gray80 . fg_gray30 . gui_bold
+  :exe 'hi IncSearch'              .bg_gray30 . fg_gray100 . gui_bold
   :exe 'hi Constant'               .fg_blue_med
   :exe 'hi Todo'                   .bg_red_med . fg_white
   :exe 'hi Directory'              .fg_white
@@ -267,8 +267,8 @@ else
   :exe 'hi CursorColumn'           .bg_gray30
   :exe 'hi Comment'                .fg_gray50
   :exe 'hi Visual'                 .bg_purple_light . fg_white
-  :exe 'hi Search'                 .bg_yellow_med . fg_gray100
-  :exe 'hi IncSearch'              .bg_yellow_med . fg_gray100
+  :exe 'hi Search'                 .bg_gray20 . fg_gray100 . gui_bold
+  :exe 'hi IncSearch'              .bg_gray90 . fg_gray100 . gui_bold
   :exe 'hi Constant'               .fg_blue_med
   :exe 'hi Todo'                   .bg_red_med . fg_white
   :exe 'hi Directory'              .fg_black
