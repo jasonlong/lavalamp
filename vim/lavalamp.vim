@@ -268,7 +268,7 @@ else
   :exe 'hi Comment'                .fg_gray50
   :exe 'hi Visual'                 .bg_purple_light . fg_white
   :exe 'hi Search'                 .bg_gray20 . fg_gray100 . gui_bold
-  :exe 'hi IncSearch'              .bg_gray90 . fg_gray100 . gui_bold
+  :exe 'hi IncSearch'              .bg_gray90 . fg_gray20 . gui_bold
   :exe 'hi Constant'               .fg_blue_med
   :exe 'hi Todo'                   .bg_red_med . fg_white
   :exe 'hi Directory'              .fg_black
