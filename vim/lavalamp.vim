@@ -232,12 +232,12 @@ endif
 :exe 'hi CursorLineNR'           .fg_gray_x_high
 :exe 'hi CursorLine'             .bg_gray_xx_low
 :exe 'hi CursorColumn'           .bg_gray_x_low
-:exe 'hi Comment'                .fg_gray_med_low
+:exe 'hi Comment'                .fg_gray_med_low . gui_italic
 :exe 'hi Visual'                 .bg_blue_low . fg_white
 :exe 'hi Search'                 .bg_blue_x_high. fg_blue_x_low . gui_bold
 :exe 'hi IncSearch'              .bg_blue_x_low . fg_blue_x_high . gui_bold
 :exe 'hi Constant'               .fg_blue_med
-:exe 'hi Todo'                   .bg_red_med . fg_max
+:exe 'hi Todo'                   .bg_red_med . fg_white
 :exe 'hi Directory'              .fg_max
 :exe 'hi Identifier'             .fg_red_med
 :exe 'hi Statement'              .fg_gray_x_high
@@ -264,8 +264,8 @@ endif
 :exe "hi PmenuSel"               .bg_blue_x_high . fg_blue_x_low
 :exe "hi PmenuSbar"              .bg_blue_x_low . fg_gray_xx_low
 
-:exe "hi SneakPluginTarget"      .bg_purple_med . fg_max
-:exe "hi SneakStreakTarget"      .bg_purple_med . fg_max
+:exe "hi SneakPluginTarget"      .bg_purple_med . fg_white
+:exe "hi SneakStreakTarget"      .bg_purple_med . fg_white
 :exe "hi SneakStreakMask"        .bg_purple_high
 
 :exe "hi SyntasticErrorSign"     .bg_gray_xxx_low . fg_red_med . gui_bold
@@ -278,7 +278,7 @@ endif
 :exe "hi GitGutterChangeDelete"  .fg_purple_high . gui_bold
 
 " VimL
-:exe 'hi vimLineComment'         .fg_gray_med_low
+:exe 'hi vimLineComment'         .fg_gray_med_low . gui_italic
 :exe 'hi vimCommand'             .fg_gray_x_high
 :exe 'hi vimSpecial'             .fg_green_high . gui_bold
 :exe 'hi vimOption'              .fg_green_high . gui_bold
@@ -289,7 +289,7 @@ endif
 :exe 'hi vimFuncName'            .fg_gray_xx_high . gui_bold
 :exe 'hi vimParenSep'            .fg_gray_xx_high
 :exe 'hi vimSep'                 .fg_gray_xx_high
-:exe 'hi vimCommentTitle'        .fg_gray_med_low . gui_bold
+:exe 'hi vimCommentTitle'        .fg_gray_med_low . gui_bold . gui_italic
 :exe 'hi vimNotation'            .fg_purple_med
 :exe 'hi vimBracket'             .fg_purple_low
 :exe 'hi vimMapModKey'           .fg_purple_med
@@ -340,6 +340,7 @@ endif
 :exe 'hi cssBoxProp'             .fg_purple_high
 :exe 'hi cssMediaProp'           .fg_purple_high
 :exe 'hi cssFlexibleBoxProp'     .fg_purple_high
+:exe 'hi cssInteractProp'        .fg_purple_high
 :exe 'hi cssFunction'            .fg_purple_high
 :exe 'hi cssFunctionName'        .fg_purple_x_high
 :exe 'hi cssURL'                 .fg_gray_x_high
@@ -355,7 +356,7 @@ endif
 :exe 'hi cssValueNumber'         .fg_gray_x_high
 :exe 'hi cssPseudoClass'         .fg_purple_x_high
 :exe 'hi sassProperty'           .fg_red_low
-:exe 'hi sassComment'            .fg_gray_med_low
+:exe 'hi sassComment'            .fg_gray_med_low . gui_italic
 :exe 'hi sassMixing'             .fg_red_low
 :exe 'hi sassMixinName'          .fg_red_high
 :exe 'hi sassInclude'            .fg_red_low
@@ -379,7 +380,7 @@ endif
 :exe 'hi rubyConstant'           .fg_max . gui_bold
 :exe 'hi rubyConditional'        .fg_max
 :exe 'hi rubyClass'              .fg_red_med
-:exe 'hi rubyComment'            .fg_gray_med_low
+:exe 'hi rubyComment'            .fg_gray_med_low . gui_italic
 :exe 'hi rubyControl'            .fg_red_x_high
 :exe 'hi rubyModule'             .fg_red_med
 :exe 'hi rubyDefine'             .fg_red_low
@@ -388,7 +389,7 @@ endif
 :exe 'hi rubyFloat'              .fg_red_x_high
 :exe 'hi rubyFunction'           .fg_max . gui_bold
 :exe 'hi rubyBoolean'            .fg_red_x_high
-:exe 'hi rubyTodo'               .fg_max . bg_red_med
+:exe 'hi rubyTodo'               .fg_white . bg_red_med
 :exe 'hi rubyPseudoVariable'     .fg_red_high
 :exe 'hi rubyStringDelimiter'    .fg_red_low
 :exe 'hi rubyArrayDelimiter'     .fg_red_x_low
@@ -417,7 +418,7 @@ endif
 :exe 'hi coffeeBoolean'          .fg_brown_high
 :exe 'hi coffeeSpecialVar'       .fg_brown_high
 :exe 'hi coffeeSpecialIdent'     .fg_brown_high
-:exe 'hi coffeeComment'          .fg_gray_med_low
+:exe 'hi coffeeComment'          .fg_gray_med_low . gui_italic
 
 " Javascript
 " Best with https://github.com/jelera/vim-javascript-syntax
@@ -559,5 +560,5 @@ endif
 :exe 'hi markdownRule'               .fg_gray_med_low
 
 " Git
-:exe 'hi gitcommitComment'      . fg_gray_med_low
+:exe 'hi gitcommitComment'      . fg_gray_med_low . gui_italic
 :exe 'hi gitcommitSummary'      . fg_gray_xx_high
