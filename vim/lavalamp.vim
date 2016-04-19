@@ -29,11 +29,11 @@ if &background == "dark"
   :let blue_low      = '#087cdb'
   :let blue_x_low    = '#074f9c'
 
-  :let purple_x_high = '#efb5fd'
-  :let purple_high   = '#e16cfc'
-  :let purple_med    = '#cb32fb'
-  :let purple_low    = '#a41fd9'
-  :let purple_x_low  = '#8015a4'
+  :let purple_x_high = '#ebb6fd'
+  :let purple_high   = '#d481f9'
+  :let purple_med    = '#b64ff2'
+  :let purple_low    = '#941fe9'
+  :let purple_x_low  = '#6b17b7'
 
   :let red_x_high    = '#fdafb8'
   :let red_high      = '#fb7885'
@@ -80,11 +80,11 @@ else
   :let blue_low      = '#00a0e2'
   :let blue_x_low    = '#00c7fd'
 
-  :let purple_x_high = '#600d70'
-  :let purple_high   = '#7f18a5'
-  :let purple_med    = '#ab2df0'
-  :let purple_low    = '#c255f3'
-  :let purple_x_low  = '#d689f4'
+  :let purple_x_high = '#5200a2'
+  :let purple_high   = '#710ab8'
+  :let purple_med    = '#9231d0'
+  :let purple_low    = '#b456e6'
+  :let purple_x_low  = '#d67ffd'
 
   :let red_x_high    = '#a40000'
   :let red_high      = '#da0000'
