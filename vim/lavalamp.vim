@@ -41,11 +41,11 @@ if &background == "dark"
   :let red_low       = '#f60d1c'
   :let red_x_low     = '#c20811'
 
-  :let yellow_x_high = '#fee772'
-  :let yellow_high   = '#fed73f'
-  :let yellow_med    = '#f9c72d'
-  :let yellow_low    = '#dd9723'
-  :let yellow_x_low  = '#b36618'
+  :let yellow_x_high = '#ffeb87'
+  :let yellow_high   = '#fee155'
+  :let yellow_med    = '#fbd525'
+  :let yellow_low    = '#e7be06'
+  :let yellow_x_low  = '#b49306'
 
   :let green_x_high  = '#affd9f'
   :let green_high    = '#68f858'
@@ -92,11 +92,11 @@ else
   :let red_low       = '#ff0b49'
   :let red_x_low     = '#ff647e'
 
-  :let yellow_x_high = '#8f4d11'
-  :let yellow_high   = '#bb6c1a'
-  :let yellow_med    = '#f69d27'
-  :let yellow_low    = '#f5ae35'
-  :let yellow_x_low  = '#f7c459'
+  :let yellow_x_high = '#563f00'
+  :let yellow_high   = '#6b5600'
+  :let yellow_med    = '#826d00'
+  :let yellow_low    = '#9a8600'
+  :let yellow_x_low  = '#b29f00'
 
   :let green_x_high  = '#004f00'
   :let green_high    = '#007200'
@@ -531,6 +531,8 @@ endif
 :exe 'hi pythonException'       .fg_yellow_low
 :exe 'hi djangoArgument'        .fg_yellow_low
 :exe 'hi pythonString'          .fg_yellow_low
+:exe 'hi pythonQuotes'          .fg_yellow_x_low
+:exe 'hi pythonTripleQuotes'    .fg_yellow_x_low
 :exe 'hi pythonBuiltin'         .fg_yellow_x_low
 :exe 'hi pythonBoolean'         .fg_yellow_x_low
 :exe 'hi pythonNumber'          .fg_yellow_x_low
