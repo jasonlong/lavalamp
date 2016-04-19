@@ -53,11 +53,11 @@ if &background == "dark"
   :let green_low     = '#0ead14'
   :let green_x_low   = '#0a6514'
 
-  :let brown_x_high  = '#fdba54'
-  :let brown_high    = '#fd942e'
-  :let brown_med     = '#d95c1c'
-  :let brown_low     = '#a93f12'
-  :let brown_x_low   = '#7d2c0a'
+  :let brown_x_high  = '#ffbc5f'
+  :let brown_high    = '#ff9822'
+  :let brown_med     = '#e46e00'
+  :let brown_low     = '#a74900'
+  :let brown_x_low   = '#6a2900'
 else
   :let max           = '#000000'
   :let min           = '#ffffff'
@@ -104,11 +104,11 @@ else
   :let green_low     = '#20ba2b'
   :let green_x_low   = '#5edf56'
 
-  :let brown_x_high  = '#5b2307'
-  :let brown_high    = '#7f300f'
-  :let brown_med     = '#b04617'
-  :let brown_low     = '#e66c29'
-  :let brown_x_low   = '#f08d43'
+  :let brown_x_high  = '#561000'
+  :let brown_high    = '#7a2a00'
+  :let brown_med     = '#9d4800'
+  :let brown_low     = '#c26b00'
+  :let brown_x_low   = '#e69012'
 endif
 
 :let bg_white         = ' guibg='.white
